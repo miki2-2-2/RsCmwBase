@@ -1,0 +1,20 @@
+Mode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:SOCKet<SocketInstance>:MODE
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:SOCKet<SocketInstance>:MODE
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Socket_.Mode.Mode
+	:members:
+	:undoc-members:
+	:noindex:

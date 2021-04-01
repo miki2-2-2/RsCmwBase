@@ -1,0 +1,43 @@
+Mutex
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:MUTex:UNLock
+	single: CONFigure:MUTex:UNDefine
+	single: CONFigure:MUTex:CATalog
+
+.. code-block:: python
+
+	CONFigure:MUTex:UNLock
+	CONFigure:MUTex:UNDefine
+	CONFigure:MUTex:CATalog
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Mutex.Mutex
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.mutex.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_Mutex_Lock.rst
+	Configure_Mutex_State.rst
+	Configure_Mutex_Define.rst

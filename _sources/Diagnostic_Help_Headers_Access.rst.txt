@@ -1,0 +1,22 @@
+Access
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:HELP:HEADers:ACCess:ENABled
+	single: DIAGnostic:HELP:HEADers:ACCess:DENied
+
+.. code-block:: python
+
+	DIAGnostic:HELP:HEADers:ACCess:ENABled
+	DIAGnostic:HELP:HEADers:ACCess:DENied
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Help_.Headers_.Access.Access
+	:members:
+	:undoc-members:
+	:noindex:

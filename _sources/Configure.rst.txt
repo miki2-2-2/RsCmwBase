@@ -1,0 +1,48 @@
+Configure
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FCONtrol
+
+.. code-block:: python
+
+	CONFigure:BASE:FCONtrol
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure.Configure
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_Spoint.rst
+	Configure_Semaphore.rst
+	Configure_Mutex.rst
+	Configure_MultiCmw.rst
+	Configure_IpSubnet.rst
+	Configure_Adjustment.rst
+	Configure_Ipcr.rst
+	Configure_FreqCorrection.rst
+	Configure_SingleCmw.rst
+	Configure_Cmwd.rst
+	Configure_Correction.rst
+	Configure_Mmonitor.rst

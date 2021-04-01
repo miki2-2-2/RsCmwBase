@@ -1,0 +1,20 @@
+ListPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:OPTion:LIST
+
+.. code-block:: python
+
+	SYSTem:BASE:OPTion:LIST
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Option_.ListPy.ListPy
+	:members:
+	:undoc-members:
+	:noindex:

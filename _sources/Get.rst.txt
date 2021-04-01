@@ -1,0 +1,20 @@
+Get
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: GET:XVALues
+
+.. code-block:: python
+
+	GET:XVALues
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Get.Get
+	:members:
+	:undoc-members:
+	:noindex:

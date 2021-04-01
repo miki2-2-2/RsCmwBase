@@ -1,0 +1,20 @@
+Macro
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: MMEMory:LOAD:MACRo
+
+.. code-block:: python
+
+	MMEMory:LOAD:MACRo
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MassMemory_.Load_.Macro.Macro
+	:members:
+	:undoc-members:
+	:noindex:

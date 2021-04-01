@@ -1,0 +1,20 @@
+GoToLocal
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: *GTL
+
+.. code-block:: python
+
+	*GTL
+
+
+
+.. autoclass:: RsCmwBase.Implementations.GoToLocal.GoToLocal
+	:members:
+	:undoc-members:
+	:noindex:

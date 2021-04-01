@@ -1,0 +1,28 @@
+SubMonitor
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.IpSubnet_.SubMonitor.SubMonitor
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.ipSubnet.subMonitor.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_IpSubnet_SubMonitor_Refresh.rst

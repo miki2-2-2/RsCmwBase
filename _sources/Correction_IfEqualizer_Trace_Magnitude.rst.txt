@@ -1,0 +1,29 @@
+Magnitude
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Correction_.IfEqualizer_.Trace_.Magnitude.Magnitude
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.correction.ifEqualizer.trace.magnitude.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Correction_IfEqualizer_Trace_Magnitude_Corrected.rst
+	Correction_IfEqualizer_Trace_Magnitude_Uncorrected.rst

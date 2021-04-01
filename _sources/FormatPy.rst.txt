@@ -1,0 +1,26 @@
+FormatPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FORMat:BASE:DATA
+	single: FORMat:BASE:BORDer
+	single: FORMat:BASE:DINTerchange
+	single: FORMat:BASE:SREGister
+
+.. code-block:: python
+
+	FORMat:BASE:DATA
+	FORMat:BASE:BORDer
+	FORMat:BASE:DINTerchange
+	FORMat:BASE:SREGister
+
+
+
+.. autoclass:: RsCmwBase.Implementations.FormatPy.FormatPy
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Rewait
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SPOint:REWait
+
+.. code-block:: python
+
+	CONFigure:SPOint:REWait
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Spoint_.Rewait.Rewait
+	:members:
+	:undoc-members:
+	:noindex:

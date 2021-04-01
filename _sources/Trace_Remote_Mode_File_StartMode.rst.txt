@@ -1,0 +1,20 @@
+StartMode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:STARtmode
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:STARtmode
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.StartMode.StartMode
+	:members:
+	:undoc-members:
+	:noindex:

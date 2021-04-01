@@ -1,0 +1,53 @@
+Diagnostic
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:SDBM
+
+.. code-block:: python
+
+	DIAGnostic:SDBM
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic.Diagnostic
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Routing.rst
+	Diagnostic_Eeprom.rst
+	Diagnostic_BgInfo.rst
+	Diagnostic_SingleCmw.rst
+	Diagnostic_Cmw.rst
+	Diagnostic_Log.rst
+	Diagnostic_FootPrint.rst
+	Diagnostic_Status.rst
+	Diagnostic_Error.rst
+	Diagnostic_Help.rst
+	Diagnostic_Access.rst
+	Diagnostic_Instrument.rst
+	Diagnostic_Kremote.rst
+	Diagnostic_Compass.rst
+	Diagnostic_Record.rst
+	Diagnostic_Pias.rst
+	Diagnostic_Product.rst

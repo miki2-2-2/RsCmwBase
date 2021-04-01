@@ -1,0 +1,20 @@
+Dump
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:LOG:DUMP
+
+.. code-block:: python
+
+	DIAGnostic:LOG:DUMP
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Log_.Dump.Dump
+	:members:
+	:undoc-members:
+	:noindex:

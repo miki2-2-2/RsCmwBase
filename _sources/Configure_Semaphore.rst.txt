@@ -1,0 +1,42 @@
+Semaphore
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SEMaphore:CATalog
+	single: CONFigure:SEMaphore:UNDefine
+
+.. code-block:: python
+
+	CONFigure:SEMaphore:CATalog
+	CONFigure:SEMaphore:UNDefine
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Semaphore.Semaphore
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.semaphore.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_Semaphore_Count.rst
+	Configure_Semaphore_Release.rst
+	Configure_Semaphore_Acquire.rst
+	Configure_Semaphore_Define.rst

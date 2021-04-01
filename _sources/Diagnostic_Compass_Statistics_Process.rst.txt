@@ -1,0 +1,20 @@
+Process
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:COMPass:STATistics:PROCess
+
+.. code-block:: python
+
+	DIAGnostic:COMPass:STATistics:PROCess
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Compass_.Statistics_.Process.Process
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+StopMode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:STOPmode
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:STOPmode
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.StopMode.StopMode
+	:members:
+	:undoc-members:
+	:noindex:

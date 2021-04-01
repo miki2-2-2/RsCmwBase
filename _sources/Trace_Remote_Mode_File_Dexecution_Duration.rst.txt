@@ -1,0 +1,20 @@
+Duration
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:DEXecution:DURation
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:DEXecution:DURation
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.Dexecution_.Duration.Duration
+	:members:
+	:undoc-members:
+	:noindex:

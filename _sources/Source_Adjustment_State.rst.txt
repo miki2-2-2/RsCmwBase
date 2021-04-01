@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SOURce:BASE:ADJustment:STATe
+
+.. code-block:: python
+
+	SOURce:BASE:ADJustment:STATe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Source_.Adjustment_.State.State
+	:members:
+	:undoc-members:
+	:noindex:

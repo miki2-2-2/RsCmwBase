@@ -1,0 +1,20 @@
+Identify
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:MCMW:IDENtify:BTIMe
+
+.. code-block:: python
+
+	CONFigure:BASE:MCMW:IDENtify:BTIMe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.MultiCmw_.Identify.Identify
+	:members:
+	:undoc-members:
+	:noindex:

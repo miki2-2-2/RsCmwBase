@@ -1,0 +1,24 @@
+StIcon
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:STICon:ENABle
+	single: SYSTem:BASE:STICon:OPEN
+	single: SYSTem:BASE:STICon:CLOSe
+
+.. code-block:: python
+
+	SYSTem:BASE:STICon:ENABle
+	SYSTem:BASE:STICon:OPEN
+	SYSTem:BASE:STICon:CLOSe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.StIcon.StIcon
+	:members:
+	:undoc-members:
+	:noindex:

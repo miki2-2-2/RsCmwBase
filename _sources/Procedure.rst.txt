@@ -1,0 +1,20 @@
+Procedure
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: PROCedure:CMWD
+
+.. code-block:: python
+
+	PROCedure:CMWD
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Procedure.Procedure
+	:members:
+	:undoc-members:
+	:noindex:

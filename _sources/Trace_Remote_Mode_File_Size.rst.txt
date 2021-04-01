@@ -1,0 +1,20 @@
+Size
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:SIZE
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:SIZE
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.Size.Size
+	:members:
+	:undoc-members:
+	:noindex:

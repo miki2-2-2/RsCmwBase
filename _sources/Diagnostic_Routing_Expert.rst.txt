@@ -1,0 +1,28 @@
+Expert
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Routing_.Expert.Expert
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.routing.expert.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Routing_Expert_Setup.rst

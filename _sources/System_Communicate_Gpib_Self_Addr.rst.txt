@@ -1,0 +1,20 @@
+Addr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:GPIB<GpibInstance>:SELF:ADDR
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:GPIB<GpibInstance>:SELF:ADDR
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Gpib_.Self_.Addr.Addr
+	:members:
+	:undoc-members:
+	:noindex:

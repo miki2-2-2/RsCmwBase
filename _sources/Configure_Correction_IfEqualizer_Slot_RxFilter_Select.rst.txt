@@ -1,0 +1,20 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:CORRection:IFEQualizer:SLOT<Slot>:RXFilter:SELect
+
+.. code-block:: python
+
+	CONFigure:BASE:CORRection:IFEQualizer:SLOT<Slot>:RXFilter:SELect
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Correction_.IfEqualizer_.Slot_.RxFilter_.Select.Select
+	:members:
+	:undoc-members:
+	:noindex:

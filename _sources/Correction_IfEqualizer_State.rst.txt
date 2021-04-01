@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:BASE:CORRection:IFEQualizer:STATe
+
+.. code-block:: python
+
+	FETCh:BASE:CORRection:IFEQualizer:STATe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Correction_.IfEqualizer_.State.State
+	:members:
+	:undoc-members:
+	:noindex:

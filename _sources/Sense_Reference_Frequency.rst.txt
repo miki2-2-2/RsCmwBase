@@ -1,0 +1,20 @@
+Frequency
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe:BASE:REFerence:FREQuency:LOCKed
+
+.. code-block:: python
+
+	SENSe:BASE:REFerence:FREQuency:LOCKed
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense_.Reference_.Frequency.Frequency
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Cataloge
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:CONDition:BITS:CATaloge
+
+.. code-block:: python
+
+	STATus:CONDition:BITS:CATaloge
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Condition_.Bits_.Cataloge.Cataloge
+	:members:
+	:undoc-members:
+	:noindex:

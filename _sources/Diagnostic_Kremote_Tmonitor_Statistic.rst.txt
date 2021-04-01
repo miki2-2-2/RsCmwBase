@@ -1,0 +1,20 @@
+Statistic
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:KREMote:TMONitor:STATistic
+
+.. code-block:: python
+
+	DIAGnostic:KREMote:TMONitor:STATistic
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Kremote_.Tmonitor_.Statistic.Statistic
+	:members:
+	:undoc-members:
+	:noindex:

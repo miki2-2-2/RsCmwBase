@@ -1,0 +1,38 @@
+Instrument
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INSTrument:NSELect
+
+.. code-block:: python
+
+	INSTrument:NSELect
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Instrument.Instrument
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.instrument.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Instrument_Select.rst
+	Instrument_Display.rst

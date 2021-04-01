@@ -1,0 +1,20 @@
+Lock
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:MUTex:LOCK
+
+.. code-block:: python
+
+	CONFigure:MUTex:LOCK
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Mutex_.Lock.Lock
+	:members:
+	:undoc-members:
+	:noindex:

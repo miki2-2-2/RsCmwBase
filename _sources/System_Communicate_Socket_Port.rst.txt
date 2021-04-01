@@ -1,0 +1,20 @@
+Port
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:SOCKet<SocketInstance>:PORT
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:SOCKet<SocketInstance>:PORT
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Socket_.Port.Port
+	:members:
+	:undoc-members:
+	:noindex:

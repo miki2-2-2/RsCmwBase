@@ -1,0 +1,20 @@
+Erase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FDCorrection:CTABle:ERASe
+
+.. code-block:: python
+
+	CONFigure:BASE:FDCorrection:CTABle:ERASe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.CorrectionTable_.Erase.Erase
+	:members:
+	:undoc-members:
+	:noindex:

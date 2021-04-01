@@ -1,0 +1,20 @@
+Vresource
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:RSIB<RsibInstance>:VRESource
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:RSIB<RsibInstance>:VRESource
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Rsib_.Vresource.Vresource
+	:members:
+	:undoc-members:
+	:noindex:

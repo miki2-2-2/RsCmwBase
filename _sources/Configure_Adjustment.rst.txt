@@ -1,0 +1,24 @@
+Adjustment
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:ADJustment:TYPE
+	single: CONFigure:BASE:ADJustment:VALue
+	single: CONFigure:BASE:ADJustment:SAVE
+
+.. code-block:: python
+
+	CONFigure:BASE:ADJustment:TYPE
+	CONFigure:BASE:ADJustment:VALue
+	CONFigure:BASE:ADJustment:SAVE
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Adjustment.Adjustment
+	:members:
+	:undoc-members:
+	:noindex:

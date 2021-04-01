@@ -1,0 +1,20 @@
+Acquire
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SEMaphore:ACQuire
+
+.. code-block:: python
+
+	CONFigure:SEMaphore:ACQuire
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Semaphore_.Acquire.Acquire
+	:members:
+	:undoc-members:
+	:noindex:

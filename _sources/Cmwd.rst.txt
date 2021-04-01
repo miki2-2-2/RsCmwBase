@@ -1,0 +1,43 @@
+Cmwd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INITiate:CMWD
+	single: STOP:CMWD
+	single: ABORt:CMWD
+	single: FETCh:CMWD
+
+.. code-block:: python
+
+	INITiate:CMWD
+	STOP:CMWD
+	ABORt:CMWD
+	FETCh:CMWD
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Cmwd.Cmwd
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.cmwd.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Cmwd_State.rst

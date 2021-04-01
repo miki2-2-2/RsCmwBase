@@ -1,0 +1,20 @@
+Next
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:EVENt:BITS:NEXT
+
+.. code-block:: python
+
+	STATus:EVENt:BITS:NEXT
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Event_.Bits_.Next.Next
+	:members:
+	:undoc-members:
+	:noindex:

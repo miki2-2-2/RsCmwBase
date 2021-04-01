@@ -1,0 +1,47 @@
+Buffer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STARt:BASE:BUFFer
+	single: STOP:BASE:BUFFer
+	single: CONTinue:BASE:BUFFer
+	single: DELete:BASE:BUFFer
+	single: CLEar:BASE:BUFFer
+	single: FETCh:BASE:BUFFer
+
+.. code-block:: python
+
+	STARt:BASE:BUFFer
+	STOP:BASE:BUFFer
+	CONTinue:BASE:BUFFer
+	DELete:BASE:BUFFer
+	CLEar:BASE:BUFFer
+	FETCh:BASE:BUFFer
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Buffer.Buffer
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.buffer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Buffer_LineCount.rst

@@ -1,0 +1,20 @@
+On
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:GENerator:CONDition:ON
+
+.. code-block:: python
+
+	STATus:GENerator:CONDition:ON
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Generator_.Condition_.On.On
+	:members:
+	:undoc-members:
+	:noindex:

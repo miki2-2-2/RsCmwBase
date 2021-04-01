@@ -1,0 +1,20 @@
+Result
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:BASE:IPC:RESult
+
+.. code-block:: python
+
+	FETCh:BASE:IPC:RESult
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Ipc_.Result.Result
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,39 @@
+MultiCmw
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INITiate:BASE:MCMW
+
+.. code-block:: python
+
+	INITiate:BASE:MCMW
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MultiCmw.MultiCmw
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.multiCmw.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	MultiCmw_Identify.rst
+	MultiCmw_Snumber.rst
+	MultiCmw_State.rst

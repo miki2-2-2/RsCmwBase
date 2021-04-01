@@ -1,0 +1,22 @@
+Instrument
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:INSTrument:LOAD
+	single: DIAGnostic:INSTrument:UNLoad
+
+.. code-block:: python
+
+	DIAGnostic:INSTrument:LOAD
+	DIAGnostic:INSTrument:UNLoad
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Instrument.Instrument
+	:members:
+	:undoc-members:
+	:noindex:

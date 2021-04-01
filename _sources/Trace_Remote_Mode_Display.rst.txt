@@ -1,0 +1,22 @@
+Display
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:DISPlay:CLEar
+	single: TRACe:REMote:MODE:DISPlay:ENABle
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:DISPlay:CLEar
+	TRACe:REMote:MODE:DISPlay:ENABle
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.Display.Display
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,37 @@
+IfEqualizer
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CATalog:BASE:CORRection:IFEQualizer:SNAMe
+
+.. code-block:: python
+
+	CATalog:BASE:CORRection:IFEQualizer:SNAMe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Catalog_.Correction_.IfEqualizer.IfEqualizer
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.catalog.correction.ifEqualizer.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Catalog_Correction_IfEqualizer_Slot.rst

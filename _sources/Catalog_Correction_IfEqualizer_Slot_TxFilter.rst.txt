@@ -1,0 +1,20 @@
+TxFilter
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CATalog:BASE:CORRection:IFEQualizer:SLOT<Slot>:TXFilter
+
+.. code-block:: python
+
+	CATalog:BASE:CORRection:IFEQualizer:SLOT<Slot>:TXFilter
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Catalog_.Correction_.IfEqualizer_.Slot_.TxFilter.TxFilter
+	:members:
+	:undoc-members:
+	:noindex:

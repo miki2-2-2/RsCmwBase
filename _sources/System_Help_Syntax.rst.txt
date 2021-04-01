@@ -1,0 +1,22 @@
+Syntax
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:HELP:SYNTax
+	single: SYSTem:HELP:SYNTax:ALL
+
+.. code-block:: python
+
+	SYSTem:HELP:SYNTax
+	SYSTem:HELP:SYNTax:ALL
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Help_.Syntax.Syntax
+	:members:
+	:undoc-members:
+	:noindex:

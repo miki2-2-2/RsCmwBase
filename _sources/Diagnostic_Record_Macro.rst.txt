@@ -1,0 +1,28 @@
+Macro
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Record_.Macro.Macro
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.record.macro.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Record_Macro_File.rst

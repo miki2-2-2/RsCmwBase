@@ -1,0 +1,20 @@
+Define
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SEMaphore:DEFine
+
+.. code-block:: python
+
+	CONFigure:SEMaphore:DEFine
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Semaphore_.Define.Define
+	:members:
+	:undoc-members:
+	:noindex:

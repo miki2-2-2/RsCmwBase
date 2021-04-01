@@ -1,0 +1,28 @@
+RxFilter
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Correction_.IfEqualizer_.Slot_.RxFilter.RxFilter
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.correction.ifEqualizer.slot.rxFilter.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_Correction_IfEqualizer_Slot_RxFilter_Select.rst

@@ -1,0 +1,46 @@
+File<FileNr>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr2
+	rc = driver.trace.remote.mode.file.repcap_fileNr_get()
+	driver.trace.remote.mode.file.repcap_fileNr_set(repcap.FileNr.Nr1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File.File
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trace.remote.mode.file.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trace_Remote_Mode_File_Dexecution.rst
+	Trace_Remote_Mode_File_StopMode.rst
+	Trace_Remote_Mode_File_StartMode.rst
+	Trace_Remote_Mode_File_Name.rst
+	Trace_Remote_Mode_File_FormatPy.rst
+	Trace_Remote_Mode_File_Size.rst
+	Trace_Remote_Mode_File_Rpc.rst
+	Trace_Remote_Mode_File_Functions.rst
+	Trace_Remote_Mode_File_Parser.rst
+	Trace_Remote_Mode_File_FilterPy.rst
+	Trace_Remote_Mode_File_Enable.rst

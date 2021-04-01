@@ -1,0 +1,39 @@
+FreqCorrection
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:CMWS:FDCorrection:DEACtivate:ALL
+
+.. code-block:: python
+
+	CONFigure:CMWS:FDCorrection:DEACtivate:ALL
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.SingleCmw_.FreqCorrection.FreqCorrection
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.singleCmw.freqCorrection.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_SingleCmw_FreqCorrection_Activate.rst
+	Configure_SingleCmw_FreqCorrection_Deactivate.rst
+	Configure_SingleCmw_FreqCorrection_Usage.rst

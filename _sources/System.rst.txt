@@ -1,0 +1,80 @@
+System
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:RELiability
+	single: SYSTem:DID
+	single: SYSTem:KLOCk
+	single: SYSTem:PRESet
+	single: SYSTem:PRESet:ALL
+	single: SYSTem:PRESet:BASE
+	single: SYSTem:RESet
+	single: SYSTem:RESet:ALL
+	single: SYSTem:RESet:BASE
+	single: SYSTem:TZONe
+	single: SYSTem:VERSion
+
+.. code-block:: python
+
+	SYSTem:BASE:RELiability
+	SYSTem:DID
+	SYSTem:KLOCk
+	SYSTem:PRESet
+	SYSTem:PRESet:ALL
+	SYSTem:PRESet:BASE
+	SYSTem:RESet
+	SYSTem:RESet:ALL
+	SYSTem:RESet:BASE
+	SYSTem:TZONe
+	SYSTem:VERSion
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System.System
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_IpSubnet.rst
+	System_Device.rst
+	System_Connector.rst
+	System_Routing.rst
+	System_Reference.rst
+	System_Ssync.rst
+	System_Time.rst
+	System_Date.rst
+	System_Display.rst
+	System_Error.rst
+	System_Help.rst
+	System_Record.rst
+	System_Startup.rst
+	System_Update.rst
+	System_Communicate.rst
+	System_Cmw.rst
+	System_SingleCmw.rst
+	System_Option.rst
+	System_Password.rst
+	System_StIcon.rst
+	System_DeviceFootprint.rst
+	System_Generator.rst
+	System_Measurement.rst
+	System_Signaling.rst

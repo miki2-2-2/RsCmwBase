@@ -1,0 +1,22 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:RECord:MACRo:FILE:SIZE
+	single: DIAGnostic:RECord:MACRo:FILE:FILTer
+
+.. code-block:: python
+
+	DIAGnostic:RECord:MACRo:FILE:SIZE
+	DIAGnostic:RECord:MACRo:FILE:FILTer
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Record_.Macro_.File.File
+	:members:
+	:undoc-members:
+	:noindex:

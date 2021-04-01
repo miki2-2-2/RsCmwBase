@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unit &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GoToLocal" href="GoToLocal.html" />
+    <link rel="prev" title="FormatPy" href="FormatPy.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Configure.html">Configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiCmw.html">MultiCmw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ipc.html">Ipc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cmwd.html">Cmwd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Procedure.html">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Get.html">Get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Correction.html">Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Catalog.html">Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Write.html">Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirmwareUpdate.html">FirmwareUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MacroCreate.html">MacroCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TriggerInvoke.html">TriggerInvoke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalWait.html">GlobalWait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalClearStatus.html">GlobalClearStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoToLocal.html">GoToLocal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Buffer.html">Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SaveState.html">SaveState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecallState.html">RecallState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="RsCmwBase.html">RsCmwBase API Structure</a> &raquo;</li>
+        
+      <li>Unit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Unit.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unit">
+<h1>Unit<a class="headerlink" href="#unit" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">SCPI Commands</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">UNIT</span><span class="p">:</span><span class="n">CONDuctance</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">CHARge</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">CAPacity</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">ENERgy</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">FREQuency</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">RESistor</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">VOLTage</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">ANGLe</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">LENGth</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">CURRent</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">POWer</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">TEMPerature</span>
+<span class="n">UNIT</span><span class="p">:</span><span class="n">TIME</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">Unit</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Unit commands group definition. 13 total commands, 0 Sub-groups, 13 group commands</p>
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitAngle<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_angle"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:ANGLe</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitAngle</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_angle</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_angle: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_capacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitCapacity<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_capacity"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CAPacity</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCapacity</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_capacity</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_capacity: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_charge</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitCharge<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_charge"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CHARge</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCharge</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_charge</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_charge: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_conductance</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitConductance<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_conductance"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CONDuctance</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitConductance</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_conductance</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_conductance: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_current</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitCurrent<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_current"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CURRent</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCurrent</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_current</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_current: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_energy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitEnergy<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_energy"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:ENERgy</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitEnergy</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_energy</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_energy: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitFrequency<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_frequency"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:FREQuency</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitFrequency</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_frequency</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_frequency: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitLenght<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_length"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:LENGth</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitLenght</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_length</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_lenght: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_power</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitPower<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_power"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:POWer</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitPower</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_power</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_power: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_resistor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitResistor<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_resistor"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:RESistor</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitResistor</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_resistor</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_resistor: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_temperature</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitTemperature<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_temperature"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:TEMPerature</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTemperature</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_temperature</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_temperature: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitTime<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_time"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:TIME</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTime</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_time</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_time: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_voltage</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DefaultUnitVoltage<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.get_voltage"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:VOLTage</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitVoltage</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">get_voltage</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>default_unit_voltage: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_angle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_angle</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitAngle</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_angle"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:ANGLe</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_angle</span><span class="p">(</span><span class="n">default_unit_angle</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitAngle</span><span class="o">.</span><span class="n">DEG</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_angle</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_capacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_capacity</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitCapacity</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_capacity"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CAPacity</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_capacity</span><span class="p">(</span><span class="n">default_unit_capacity</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCapacity</span><span class="o">.</span><span class="n">AF</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_capacity</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_charge</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_charge</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitCharge</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_charge"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CHARge</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_charge</span><span class="p">(</span><span class="n">default_unit_charge</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCharge</span><span class="o">.</span><span class="n">AC</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_charge</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_conductance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_conductance</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitConductance</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_conductance"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CONDuctance</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_conductance</span><span class="p">(</span><span class="n">default_unit_conductance</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitConductance</span><span class="o">.</span><span class="n">ASIE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_conductance</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_current</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_current</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitCurrent</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_current"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:CURRent</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_current</span><span class="p">(</span><span class="n">default_unit_current</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCurrent</span><span class="o">.</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_current</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_energy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_energy</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitEnergy</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_energy"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:ENERgy</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_energy</span><span class="p">(</span><span class="n">default_unit_energy</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitEnergy</span><span class="o">.</span><span class="n">AJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_energy</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_frequency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_frequency</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitFrequency</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_frequency"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:FREQuency</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_frequency</span><span class="p">(</span><span class="n">default_unit_frequency</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitFrequency</span><span class="o">.</span><span class="n">AHZ</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_frequency</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_length</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_lenght</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitLenght</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_length"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:LENGth</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_length</span><span class="p">(</span><span class="n">default_unit_lenght</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitLenght</span><span class="o">.</span><span class="n">AM</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_lenght</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_power</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_power</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitPower</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_power"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:POWer</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_power</span><span class="p">(</span><span class="n">default_unit_power</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitPower</span><span class="o">.</span><span class="n">AW</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_power</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_resistor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_resistor</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitResistor</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_resistor"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:RESistor</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_resistor</span><span class="p">(</span><span class="n">default_unit_resistor</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitResistor</span><span class="o">.</span><span class="n">AOHM</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_resistor</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_temperature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_temperature</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitTemperature</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_temperature"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:TEMPerature</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_temperature</span><span class="p">(</span><span class="n">default_unit_temperature</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTemperature</span><span class="o">.</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_temperature</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_time</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitTime</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_time"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:TIME</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_time</span><span class="p">(</span><span class="n">default_unit_time</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTime</span><span class="o">.</span><span class="n">AS</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_time</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_voltage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">default_unit_voltage</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DefaultUnitVoltage</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Unit.html#Unit.set_voltage"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: UNIT:VOLTage</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">unit</span><span class="o">.</span><span class="n">set_voltage</span><span class="p">(</span><span class="n">default_unit_voltage</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitVoltage</span><span class="o">.</span><span class="n">AV</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param default_unit_voltage</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="GoToLocal.html" class="btn btn-neutral float-right" title="GoToLocal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="FormatPy.html" class="btn btn-neutral float-left" title="FormatPy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

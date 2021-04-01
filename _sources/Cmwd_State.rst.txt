@@ -1,0 +1,20 @@
+State
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:CMWD:STATe
+
+.. code-block:: python
+
+	FETCh:CMWD:STATe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Cmwd_.State.State
+	:members:
+	:undoc-members:
+	:noindex:

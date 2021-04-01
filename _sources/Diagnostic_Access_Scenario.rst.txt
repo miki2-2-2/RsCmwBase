@@ -1,0 +1,20 @@
+Scenario
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:ACCess:SCENario
+
+.. code-block:: python
+
+	DIAGnostic:ACCess:SCENario
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Access_.Scenario.Scenario
+	:members:
+	:undoc-members:
+	:noindex:

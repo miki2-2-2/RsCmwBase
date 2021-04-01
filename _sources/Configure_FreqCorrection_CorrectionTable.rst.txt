@@ -1,0 +1,45 @@
+CorrectionTable
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FDCorrection:CTABle:DELete
+
+.. code-block:: python
+
+	CONFigure:BASE:FDCorrection:CTABle:DELete
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.CorrectionTable.CorrectionTable
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.freqCorrection.correctionTable.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_FreqCorrection_CorrectionTable_Create.rst
+	Configure_FreqCorrection_CorrectionTable_Erase.rst
+	Configure_FreqCorrection_CorrectionTable_Add.rst
+	Configure_FreqCorrection_CorrectionTable_DeleteAll.rst
+	Configure_FreqCorrection_CorrectionTable_Length.rst
+	Configure_FreqCorrection_CorrectionTable_Details.rst
+	Configure_FreqCorrection_CorrectionTable_Catalog.rst
+	Configure_FreqCorrection_CorrectionTable_Count.rst
+	Configure_FreqCorrection_CorrectionTable_Exist.rst

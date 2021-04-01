@@ -1,0 +1,20 @@
+Operating
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe:BASE:TEMPerature:OPERating:INTernal
+
+.. code-block:: python
+
+	SENSe:BASE:TEMPerature:OPERating:INTernal
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense_.Temperature_.Operating.Operating
+	:members:
+	:undoc-members:
+	:noindex:

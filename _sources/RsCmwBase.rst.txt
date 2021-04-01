@@ -1,0 +1,47 @@
+RsCmwBase API Structure
+========================================
+
+
+.. autoclass:: RsCmwBase.RsCmwBase
+	:members:
+	:undoc-members:
+	:noindex:
+
+.. rubric:: Subgroups
+
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure.rst
+	MultiCmw.rst
+	Sense.rst
+	System.rst
+	Source.rst
+	Calibration.rst
+	Ipc.rst
+	Diagnostic.rst
+	Trigger.rst
+	Cmwd.rst
+	Procedure.rst
+	Get.rst
+	Correction.rst
+	Catalog.rst
+	Write.rst
+	FirmwareUpdate.rst
+	MacroCreate.rst
+	TriggerInvoke.rst
+	GlobalWait.rst
+	GlobalClearStatus.rst
+	Status.rst
+	Instrument.rst
+	Display.rst
+	FormatPy.rst
+	Unit.rst
+	GoToLocal.rst
+	Buffer.rst
+	Trace.rst
+	HardCopy.rst
+	SaveState.rst
+	RecallState.rst
+	MassMemory.rst

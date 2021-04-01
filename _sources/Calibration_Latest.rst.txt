@@ -1,0 +1,37 @@
+Latest
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration:BASE:LATest
+
+.. code-block:: python
+
+	CALibration:BASE:LATest
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Calibration_.Latest.Latest
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.calibration.latest.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Calibration_Latest_Specific.rst

@@ -1,0 +1,32 @@
+Condition
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Measurement_.Condition.Condition
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.status.measurement.condition.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Status_Measurement_Condition_Off.rst
+	Status_Measurement_Condition_Qued.rst
+	Status_Measurement_Condition_Run.rst
+	Status_Measurement_Condition_Rdy.rst
+	Status_Measurement_Condition_SdReached.rst

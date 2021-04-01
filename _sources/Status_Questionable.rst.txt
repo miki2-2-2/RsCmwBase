@@ -1,0 +1,45 @@
+Questionable
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:QUEStionable:EVENt
+	single: STATus:QUEStionable:CONDition
+	single: STATus:QUEStionable:ENABle
+	single: STATus:QUEStionable:PTRansition
+	single: STATus:QUEStionable:NTRansition
+
+.. code-block:: python
+
+	STATus:QUEStionable:EVENt
+	STATus:QUEStionable:CONDition
+	STATus:QUEStionable:ENABle
+	STATus:QUEStionable:PTRansition
+	STATus:QUEStionable:NTRansition
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Questionable.Questionable
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.status.questionable.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Status_Questionable_Bit.rst

@@ -1,0 +1,20 @@
+Identify
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STARt:BASE:MCMW:IDENtify
+
+.. code-block:: python
+
+	STARt:BASE:MCMW:IDENtify
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MultiCmw_.Identify.Identify
+	:members:
+	:undoc-members:
+	:noindex:

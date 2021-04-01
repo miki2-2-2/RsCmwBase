@@ -1,0 +1,20 @@
+Ids
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:FOOTprint:ELEMent:CONNection:TARGet:IDS
+
+.. code-block:: python
+
+	DIAGnostic:FOOTprint:ELEMent:CONNection:TARGet:IDS
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.FootPrint_.Element_.Connection_.Target_.Ids.Ids
+	:members:
+	:undoc-members:
+	:noindex:

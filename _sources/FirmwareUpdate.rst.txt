@@ -1,0 +1,20 @@
+FirmwareUpdate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:FWUPdate:VERSions
+
+.. code-block:: python
+
+	FETCh:FWUPdate:VERSions
+
+
+
+.. autoclass:: RsCmwBase.Implementations.FirmwareUpdate.FirmwareUpdate
+	:members:
+	:undoc-members:
+	:noindex:

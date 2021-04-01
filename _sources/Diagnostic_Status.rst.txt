@@ -1,0 +1,20 @@
+Status
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:STATus:OPC
+
+.. code-block:: python
+
+	DIAGnostic:STATus:OPC
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Status.Status
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,950 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to the RsCmwBase Documentation &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Index" href="genindex.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Welcome to the RsCmwBase Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-the-rscmwbase-documentation">
+<h1>Welcome to the RsCmwBase Documentation<a class="headerlink" href="#welcome-to-the-rscmwbase-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#finding-available-instruments">Finding Available Instruments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#initiating-instrument-session">Initiating Instrument Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#plain-scpi-communication">Plain SCPI Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#error-checking">Error Checking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#exception-handling">Exception Handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#transferring-files">Transferring Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#writing-binary-data">Writing Binary Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#transferring-big-data-with-progress">Transferring Big Data with Progress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GettingStarted.html#multithreading">Multithreading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#adjuststatus">AdjustStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#baseadjstate">BaseAdjState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#boxnumber">BoxNumber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#byteorder">ByteOrder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#catalogformat">CatalogFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#cmwcurrentstatus">CmwCurrentStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#cmwmode">CmwMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#cmwsetstatus">CmwSetStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#colorset">ColorSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#corrresult">CorrResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#dataformat">DataFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitangle">DefaultUnitAngle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitcapacity">DefaultUnitCapacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitcharge">DefaultUnitCharge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitconductance">DefaultUnitConductance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitcurrent">DefaultUnitCurrent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitenergy">DefaultUnitEnergy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitfrequency">DefaultUnitFrequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitlenght">DefaultUnitLenght</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitpower">DefaultUnitPower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitresistor">DefaultUnitResistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunittemperature">DefaultUnitTemperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunittime">DefaultUnitTime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#defaultunitvoltage">DefaultUnitVoltage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#diagloggigmode">DiagLoggigMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#diagloggingdevice">DiagLoggingDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#directionio">DirectionIo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#displaylanguage">DisplayLanguage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#displaymode">DisplayMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#displaystrategy">DisplayStrategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#expertsetup">ExpertSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#expressionmode">ExpressionMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#fanmode">FanMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#fonttype">FontType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#joinaction">JoinAction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#mutexaction">MutexAction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#mutexstate">MutexState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#operationmode">OperationMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#oscillatortype">OscillatorType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#producttype">ProductType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#remotetraceenable">RemoteTraceEnable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#remotetracefileformat">RemoteTraceFileFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#remotetracestartmode">RemoteTraceStartMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#remotetracestopmode">RemoteTraceStopMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#resourcestate">ResourceState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#rfconverterinpath">RfConverterInPath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#rollkeymode">RollkeyMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#rxtxdirection">RxTxDirection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#screenshotformat">ScreenshotFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#segment">Segment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#signalslope">SignalSlope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#socketprotocol">SocketProtocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#sourceintext">SourceIntExt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#statregformat">StatRegFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#storageplace">StoragePlace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#subnetscope">SubnetScope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#syncpolling">SyncPolling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#syncresult">SyncResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#textformatting">TextFormatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#type">Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#userrole">UserRole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#validityscope">ValidityScope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#validityscopea">ValidityScopeA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html#validityscopeb">ValidityScopeB</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#bitnr">BitNr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#cmwvariant">CmwVariant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#eout">Eout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#filenr">FileNr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#frequency">Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#gpibinstance">GpibInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#hislipinstance">HislipInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#ipaddress">IpAddress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#nwadapter">NwAdapter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#rsibinstance">RsibInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#rxfilter">RxFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#slot">Slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#socketinstance">SocketInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#trigger">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#txfilter">TxFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#vxiinstance">VxiInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repcap.html#window">Window</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Configure.html">Configure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Spoint.html">Spoint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Spoint_Define.html">Define</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Spoint_Rewait.html">Rewait</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Spoint_Join.html">Join</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Semaphore.html">Semaphore</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Semaphore_Count.html">Count</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Semaphore_Release.html">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Semaphore_Acquire.html">Acquire</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Semaphore_Define.html">Define</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Mutex.html">Mutex</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Mutex_Lock.html">Lock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Mutex_State.html">State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Mutex_Define.html">Define</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_MultiCmw.html">MultiCmw</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_MultiCmw_Identify.html">Identify</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_IpSubnet.html">IpSubnet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_IpSubnet_NwAdapter.html">NwAdapter&lt;NwAdapter&gt;</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Adjustment.html">Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Ipcr.html">Ipcr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_FreqCorrection.html">FreqCorrection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable.html">CorrectionTable</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Create.html">Create</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Erase.html">Erase</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Add.html">Add</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_DeleteAll.html">DeleteAll</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Length.html">Length</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Details.html">Details</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Catalog.html">Catalog</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Count.html">Count</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_FreqCorrection_CorrectionTable_Exist.html">Exist</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_FreqCorrection_Activate.html">Activate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configure_FreqCorrection_Usage.html">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_SingleCmw.html">SingleCmw</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection.html">FreqCorrection</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection_Activate.html">Activate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection_Deactivate.html">Deactivate</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection_Deactivate_Rx.html">Rx</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection_Deactivate_Tx.html">Tx</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection_Usage.html">Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Cmwd.html">Cmwd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Correction.html">Correction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Correction_IfEqualizer.html">IfEqualizer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Configure_Correction_IfEqualizer_Slot.html">Slot&lt;Slot&gt;</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Configure_Correction_IfEqualizer_Slot_RxFilter.html">RxFilter</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Configure_Correction_IfEqualizer_Slot_TxFilter.html">TxFilter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Mmonitor.html">Mmonitor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Configure_Mmonitor_IpAddress.html">IpAddress&lt;IpAddress&gt;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="MultiCmw.html">MultiCmw</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MultiCmw_Identify.html">Identify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MultiCmw_Snumber.html">Snumber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MultiCmw_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Sense_IpSubnet.html">IpSubnet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sense_IpSubnet_Snode.html">Snode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sense_IpSubnet_SubMonitor.html">SubMonitor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sense_Temperature.html">Temperature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sense_Temperature_Operating.html">Operating</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sense_Temperature_Exceeded.html">Exceeded</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sense_Reference.html">Reference</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Sense_Reference_Frequency.html">Frequency</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Sense_FirmwareUpdate.html">FirmwareUpdate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="System_IpSubnet.html">IpSubnet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_IpSubnet_SubMonitor.html">SubMonitor</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_IpSubnet_SubMonitor_Refresh.html">Refresh</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Device.html">Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System_Connector.html">Connector</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Connector_Translation.html">Translation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Routing.html">Routing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Routing_Possible.html">Possible</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Reference.html">Reference</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Reference_Frequency.html">Frequency&lt;Frequency&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Reference_Frequency_Advanced.html">Advanced</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="System_Reference_Frequency_Advanced_Source.html">Source</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Reference_Phase.html">Phase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Reference_Dc.html">Dc</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Reference_Dc_Offset.html">Offset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Ssync.html">Ssync</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System_Time.html">Time</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Time_DaylightSavingTime.html">DaylightSavingTime</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Time_DaylightSavingTime_Rule.html">Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Time_HrTimer.html">HrTimer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Time_HrTimer_Absolute.html">Absolute</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="System_Time_HrTimer_Absolute_Set.html">Set</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Date.html">Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System_Display.html">Display</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Display_Monitor.html">Monitor</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Display_Monitor_Off.html">Off</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Error.html">Error</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Error_Code.html">Code</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Help.html">Help</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Help_Headers.html">Headers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Help_Syntax.html">Syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Help_Status.html">Status</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Record.html">Record</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Record_Macro.html">Macro</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Record_Macro_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Startup.html">Startup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Startup_Prepare.html">Prepare</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Update.html">Update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System_Communicate.html">Communicate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Net.html">Net</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Net_Dns.html">Dns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Net_Subnet.html">Subnet</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Gpib.html">Gpib&lt;GpibInstance&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Gpib_Self.html">Self</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="System_Communicate_Gpib_Self_Enable.html">Enable</a></li>
+<li class="toctree-l6"><a class="reference internal" href="System_Communicate_Gpib_Self_Addr.html">Addr</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Gpib_Vresource.html">Vresource</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Usb.html">Usb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Rsib.html">Rsib&lt;RsibInstance&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Rsib_Vresource.html">Vresource</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Socket.html">Socket&lt;SocketInstance&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Socket_Vresource.html">Vresource</a></li>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Socket_Mode.html">Mode</a></li>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Socket_Port.html">Port</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Vxi.html">Vxi&lt;VxiInstance&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Vxi_Vresource.html">Vresource</a></li>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Vxi_Gtr.html">Gtr</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="System_Communicate_Hislip.html">Hislip&lt;HislipInstance&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Communicate_Hislip_Vresource.html">Vresource</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Cmw.html">Cmw&lt;CmwVariant&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Cmw_Device.html">Device</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Cmw_Device_Id.html">Id</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_SingleCmw.html">SingleCmw</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_SingleCmw_Device.html">Device</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Option.html">Option</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Option_ListPy.html">ListPy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Option_Description.html">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Option_Version.html">Version</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Password.html">Password</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Password_Cenable.html">Cenable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="System_Password_New.html">New</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_StIcon.html">StIcon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System_DeviceFootprint.html">DeviceFootprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="System_Generator.html">Generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Generator_All.html">All</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Generator_All_Off.html">Off</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Measurement.html">Measurement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Measurement_All.html">All</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Measurement_All_Off.html">Off</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="System_Signaling.html">Signaling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="System_Signaling_All.html">All</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="System_Signaling_All_Off.html">Off</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Source_Adjustment.html">Adjustment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Source_Adjustment_State.html">State</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Calibration_Latest.html">Latest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Calibration_Latest_Specific.html">Specific</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Calibration_Ipcr.html">Ipcr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Calibration_Ipc.html">Ipc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Ipc.html">Ipc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Ipc_Result.html">Result</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Routing.html">Routing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Routing_Expert.html">Expert</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Routing_Expert_Setup.html">Setup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Eeprom.html">Eeprom</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Eeprom_Header.html">Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Eeprom_Data.html">Data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_BgInfo.html">BgInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_SingleCmw.html">SingleCmw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Cmw.html">Cmw&lt;CmwVariant&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Cmw_LedTest.html">LedTest</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Cmw_LedTest_Tx.html">Tx</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Cmw_LedTest_Rx.html">Rx</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Log.html">Log</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Log_Dump.html">Dump</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_FootPrint.html">FootPrint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_FootPrint_Element.html">Element</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_FootPrint_Element_Connection.html">Connection</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Diagnostic_FootPrint_Element_Connection_Target.html">Target</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_FootPrint_Element_Properties.html">Properties</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_FootPrint_Element_References.html">References</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_FootPrint_Element_Data.html">Data</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_FootPrint_UseCase.html">UseCase</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_FootPrint_UseCase_Data.html">Data</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_FootPrint_Li.html">Li</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_FootPrint_Li_Usecases.html">Usecases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Status.html">Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Error.html">Error</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Error_Queue.html">Queue</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Error_Queue_Push.html">Push</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Help.html">Help</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Help_Syntax.html">Syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Help_Headers.html">Headers</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Help_Headers_Access.html">Access</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Access.html">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Access_Restore.html">Restore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Access_Scenario.html">Scenario</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Instrument.html">Instrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Kremote.html">Kremote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Kremote_Tmonitor.html">Tmonitor</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Kremote_Tmonitor_Enable.html">Enable</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Kremote_Tmonitor_Dump.html">Dump</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Kremote_Tmonitor_Statistic.html">Statistic</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Kremote_Tmonitor_Trace.html">Trace</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Compass.html">Compass</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Compass_Statistics.html">Statistics</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Compass_Statistics_Process.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Compass_Debug.html">Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Compass_Dbase.html">Dbase</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Compass_Dbase_Rlogging.html">Rlogging</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Diagnostic_Compass_Dbase_Rlogging_Protocol.html">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Compass_Dbase_TaLogging.html">TaLogging</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Diagnostic_Compass_Dbase_TaLogging_Protocol.html">Protocol</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Diagnostic_Compass_Dbase_TaLogging_Mode.html">Mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Record.html">Record</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Record_Macro.html">Macro</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Record_Macro_File.html">File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Pias.html">Pias</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Pias_Scan.html">Scan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Pias_Connect.html">Connect</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Diagnostic_Pias_Connect_Multiple.html">Multiple</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Diagnostic_Product.html">Product</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Product_Time.html">Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Diagnostic_Product_MacAddress.html">MacAddress</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_ExtA.html">ExtA</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Trigger_ExtA_Catalog.html">Catalog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_ExtB.html">ExtB</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Trigger_ExtB_Catalog.html">Catalog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_UserInitiated.html">UserInitiated&lt;Trigger&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Trigger_UserInitiated_Execute.html">Execute</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_Eout.html">Eout&lt;Eout&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Trigger_Eout_Catalog.html">Catalog</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Trigger_Eout_Catalog_Source.html">Source</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Trigger_Eout_Source.html">Source</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Cmwd.html">Cmwd</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Cmwd_State.html">State</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Procedure.html">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Get.html">Get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Correction.html">Correction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Correction_IfEqualizer.html">IfEqualizer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Correction_IfEqualizer_State.html">State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Correction_IfEqualizer_Slot.html">Slot&lt;Slot&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Correction_IfEqualizer_Slot_RxFilter.html">RxFilter</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Correction_IfEqualizer_Slot_TxFilter.html">TxFilter</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Correction_IfEqualizer_Trace.html">Trace</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Correction_IfEqualizer_Trace_Magnitude.html">Magnitude</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Correction_IfEqualizer_Trace_Magnitude_Corrected.html">Corrected</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Correction_IfEqualizer_Trace_Magnitude_Uncorrected.html">Uncorrected</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="Correction_IfEqualizer_Trace_Gdelay.html">Gdelay</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Correction_IfEqualizer_Trace_Gdelay_Corrected.html">Corrected</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Correction_IfEqualizer_Trace_Gdelay_Uncorrected.html">Uncorrected</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Catalog.html">Catalog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Catalog_Correction.html">Correction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Catalog_Correction_IfEqualizer.html">IfEqualizer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Catalog_Correction_IfEqualizer_Slot.html">Slot&lt;Slot&gt;</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Catalog_Correction_IfEqualizer_Slot_RxFilter.html">RxFilter</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Catalog_Correction_IfEqualizer_Slot_TxFilter.html">TxFilter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Write.html">Write</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Write_Eeprom.html">Eeprom</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Write_Eeprom_Data.html">Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FirmwareUpdate.html">FirmwareUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MacroCreate.html">MacroCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TriggerInvoke.html">TriggerInvoke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalWait.html">GlobalWait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalClearStatus.html">GlobalClearStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Status_Queue.html">Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Status_Operation.html">Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Status_Operation_Bit.html">Bit&lt;BitNr&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Status_Operation_Bit_Condition.html">Condition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Operation_Bit_Enable.html">Enable</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Operation_Bit_Event.html">Event</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Operation_Bit_Ntransition.html">Ntransition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Operation_Bit_Ptransition.html">Ptransition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Status_Questionable.html">Questionable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Status_Questionable_Bit.html">Bit&lt;BitNr&gt;</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Status_Questionable_Bit_Condition.html">Condition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Questionable_Bit_Enable.html">Enable</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Questionable_Bit_Event.html">Event</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Questionable_Bit_Ntransition.html">Ntransition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Questionable_Bit_Ptransition.html">Ptransition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Status_Condition.html">Condition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Status_Condition_Bits.html">Bits</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Status_Condition_Bits_Cataloge.html">Cataloge</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Condition_Bits_All.html">All</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Condition_Bits_Count.html">Count</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Status_Event.html">Event</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Status_Event_Bits.html">Bits</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Status_Event_Bits_All.html">All</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Event_Bits_Count.html">Count</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Event_Bits_Next.html">Next</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Status_Measurement.html">Measurement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Status_Measurement_Condition.html">Condition</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Status_Measurement_Condition_Off.html">Off</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Measurement_Condition_Qued.html">Qued</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Measurement_Condition_Run.html">Run</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Measurement_Condition_Rdy.html">Rdy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Measurement_Condition_SdReached.html">SdReached</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Status_Generator.html">Generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Status_Generator_Condition.html">Condition</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Status_Generator_Condition_Off.html">Off</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Generator_Condition_Pending.html">Pending</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Status_Generator_Condition_On.html">On</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Instrument_Select.html">Select</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Instrument_Display.html">Display</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Display_Window.html">Window&lt;Window&gt;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Display_Window_Select.html">Select</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoToLocal.html">GoToLocal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Buffer.html">Buffer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Buffer_LineCount.html">LineCount</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Trace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Trace_Remote.html">Remote</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Trace_Remote_Mode.html">Mode</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Trace_Remote_Mode_Display.html">Display</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Trace_Remote_Mode_File.html">File&lt;FileNr&gt;</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Dexecution.html">Dexecution</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_StopMode.html">StopMode</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_StartMode.html">StartMode</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Name.html">Name</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_FormatPy.html">FormatPy</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Size.html">Size</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Rpc.html">Rpc</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Functions.html">Functions</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Parser.html">Parser</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_FilterPy.html">FilterPy</a></li>
+<li class="toctree-l6"><a class="reference internal" href="Trace_Remote_Mode_File_Enable.html">Enable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HardCopy_Device.html">Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HardCopy_Interior.html">Interior</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="SaveState.html">SaveState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecallState.html">RecallState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Load.html">Load</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Load_Macro.html">Macro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Load_State.html">State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Load_Item.html">Item</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Store.html">Store</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Store_Macro.html">Macro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Store_State.html">State</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Store_Item.html">Item</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Attribute.html">Attribute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Catalog.html">Catalog</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Catalog_Length.html">Length</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_CurrentDirectory.html">CurrentDirectory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Dcatalog.html">Dcatalog</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="MassMemory_Dcatalog_Length.html">Length</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="genindex.html" class="btn btn-neutral float-right" title="Index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

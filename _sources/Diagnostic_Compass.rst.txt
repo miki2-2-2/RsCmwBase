@@ -1,0 +1,41 @@
+Compass
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:COMPass:VERSion
+	single: DIAGnostic:COMPass:HEAPcheck
+
+.. code-block:: python
+
+	DIAGnostic:COMPass:VERSion
+	DIAGnostic:COMPass:HEAPcheck
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Compass.Compass
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.compass.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Compass_Statistics.rst
+	Diagnostic_Compass_Debug.rst
+	Diagnostic_Compass_Dbase.rst

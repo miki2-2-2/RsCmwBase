@@ -1,0 +1,28 @@
+Catalog
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trigger_.Eout_.Catalog.Catalog
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trigger.eout.catalog.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trigger_Eout_Catalog_Source.rst

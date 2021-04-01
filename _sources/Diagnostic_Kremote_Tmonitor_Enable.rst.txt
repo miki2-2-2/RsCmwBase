@@ -1,0 +1,28 @@
+Enable
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:KREMote:TMONitor:ENABle:STATistic
+	single: DIAGnostic:KREMote:TMONitor:ENABle:TIMing
+	single: DIAGnostic:KREMote:TMONitor:ENABle:TRACe
+	single: DIAGnostic:KREMote:TMONitor:ENABle:RPC
+	single: DIAGnostic:KREMote:TMONitor:ENABle
+
+.. code-block:: python
+
+	DIAGnostic:KREMote:TMONitor:ENABle:STATistic
+	DIAGnostic:KREMote:TMONitor:ENABle:TIMing
+	DIAGnostic:KREMote:TMONitor:ENABle:TRACe
+	DIAGnostic:KREMote:TMONitor:ENABle:RPC
+	DIAGnostic:KREMote:TMONitor:ENABle
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Kremote_.Tmonitor_.Enable.Enable
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Qued
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:MEASurement:CONDition:QUED
+
+.. code-block:: python
+
+	STATus:MEASurement:CONDition:QUED
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Measurement_.Condition_.Qued.Qued
+	:members:
+	:undoc-members:
+	:noindex:

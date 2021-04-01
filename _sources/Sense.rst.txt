@@ -1,0 +1,31 @@
+Sense
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense.Sense
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.sense.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Sense_IpSubnet.rst
+	Sense_Temperature.rst
+	Sense_Reference.rst
+	Sense_FirmwareUpdate.rst

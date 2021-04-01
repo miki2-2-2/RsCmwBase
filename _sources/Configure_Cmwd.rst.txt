@@ -1,0 +1,20 @@
+Cmwd
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:CMWD:TIMeout
+
+.. code-block:: python
+
+	CONFigure:CMWD:TIMeout
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Cmwd.Cmwd
+	:members:
+	:undoc-members:
+	:noindex:

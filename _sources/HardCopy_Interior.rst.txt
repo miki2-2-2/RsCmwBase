@@ -1,0 +1,22 @@
+Interior
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: HCOPy:INTerior:DATA
+	single: HCOPy:INTerior:FILE
+
+.. code-block:: python
+
+	HCOPy:INTerior:DATA
+	HCOPy:INTerior:FILE
+
+
+
+.. autoclass:: RsCmwBase.Implementations.HardCopy_.Interior.Interior
+	:members:
+	:undoc-members:
+	:noindex:

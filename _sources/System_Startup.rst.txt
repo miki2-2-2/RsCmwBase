@@ -1,0 +1,28 @@
+Startup
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Startup.Startup
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.startup.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Startup_Prepare.rst

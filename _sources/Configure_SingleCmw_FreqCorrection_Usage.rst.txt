@@ -1,0 +1,20 @@
+Usage
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:CMWS:FDCorrection:USAGe
+
+.. code-block:: python
+
+	CONFigure:CMWS:FDCorrection:USAGe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.SingleCmw_.FreqCorrection_.Usage.Usage
+	:members:
+	:undoc-members:
+	:noindex:

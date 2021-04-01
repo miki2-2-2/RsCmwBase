@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ExtA &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Catalog" href="Trigger_ExtA_Catalog.html" />
+    <link rel="prev" title="Trigger" href="Trigger.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Configure.html">Configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiCmw.html">MultiCmw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ipc.html">Ipc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Trigger.html">Trigger</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ExtA</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Trigger_ExtA_Catalog.html">Catalog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_ExtB.html">ExtB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_UserInitiated.html">UserInitiated&lt;Trigger&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Trigger_Eout.html">Eout&lt;Eout&gt;</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Cmwd.html">Cmwd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Procedure.html">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Get.html">Get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Correction.html">Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Catalog.html">Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Write.html">Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirmwareUpdate.html">FirmwareUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MacroCreate.html">MacroCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TriggerInvoke.html">TriggerInvoke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalWait.html">GlobalWait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalClearStatus.html">GlobalClearStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoToLocal.html">GoToLocal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Buffer.html">Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SaveState.html">SaveState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecallState.html">RecallState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="RsCmwBase.html">RsCmwBase API Structure</a> &raquo;</li>
+        
+          <li><a href="Trigger.html">Trigger</a> &raquo;</li>
+        
+      <li>ExtA</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Trigger_ExtA.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exta">
+<h1>ExtA<a class="headerlink" href="#exta" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">SCPI Commands</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">TRIGger</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">EXTA</span><span class="p">:</span><span class="n">SOURce</span>
+<span class="n">TRIGger</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">EXTA</span><span class="p">:</span><span class="n">DIRection</span>
+<span class="n">TRIGger</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">EXTA</span><span class="p">:</span><span class="n">SLOPe</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">ExtA</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>ExtA commands group definition. 4 total commands, 1 Sub-groups, 3 group commands</p>
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_direction</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.DirectionIo<a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA.get_direction"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: TRIGger:BASE:EXTA:DIRection</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DirectionIo</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">get_direction</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the TRIG A and TRIG B connectors as either input or output connectors.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>direction: IN | OUT IN: Input connector OUT: Output connector</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_slope</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.SignalSlope<a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA.get_slope"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: TRIGger:BASE:EXTA:SLOPe</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">SignalSlope</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">get_slope</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Specifies whether the rising edge or the falling edge of the trigger pulse is generated at the trigger event. The setting
+applies to output trigger signals provided at the TRIG A (EXTA) or TRIG B (EXTB) connector.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>slope: REDGe | FEDGe REDGe: Rising edge FEDGe: Falling edge</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA.get_source"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: TRIGger:BASE:EXTA:SOURce</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">get_source</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the output trigger signals to be routed to the TRIG A and TRIG B connectors. The available values depend on the
+installed options. A complete list of all supported values can be retrieved using TRIGger:…:CATalog:SOURce?.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>source: Trigger source as string</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_direction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="p">:</span> <span class="n">RsCmwBase.enums.DirectionIo</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA.set_direction"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: TRIGger:BASE:EXTA:DIRection</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">set_direction</span><span class="p">(</span><span class="n">direction</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DirectionIo</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the TRIG A and TRIG B connectors as either input or output connectors.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param direction</dt>
+<dd class="field-odd"><p>IN | OUT IN: Input connector OUT: Output connector</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_slope</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">slope</span><span class="p">:</span> <span class="n">RsCmwBase.enums.SignalSlope</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA.set_slope"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: TRIGger:BASE:EXTA:SLOPe</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">set_slope</span><span class="p">(</span><span class="n">slope</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SignalSlope</span><span class="o">.</span><span class="n">FEDGe</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Specifies whether the rising edge or the falling edge of the trigger pulse is generated at the trigger event. The setting
+applies to output trigger signals provided at the TRIG A (EXTA) or TRIG B (EXTB) connector.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param slope</dt>
+<dd class="field-odd"><p>REDGe | FEDGe REDGe: Rising edge FEDGe: Falling edge</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_source</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Trigger_/ExtA.html#ExtA.set_source"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: TRIGger:BASE:EXTA:SOURce</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">set_source</span><span class="p">(</span><span class="n">source</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Selects the output trigger signals to be routed to the TRIG A and TRIG B connectors. The available values depend on the
+installed options. A complete list of all supported values can be retrieved using TRIGger:…:CATalog:SOURce?.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param source</dt>
+<dd class="field-odd"><p>Trigger source as string</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<p class="rubric">Cloning the Group</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a clone of the original group, that exists independently</span>
+<span class="n">group2</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">trigger</span><span class="o">.</span><span class="n">extA</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Subgroups</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Trigger_ExtA_Catalog.html">Catalog</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Trigger_ExtA_Catalog.html" class="btn btn-neutral float-right" title="Catalog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Trigger.html" class="btn btn-neutral float-left" title="Trigger" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

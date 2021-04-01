@@ -1,0 +1,20 @@
+Catalog
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FDCorrection:CTABle:CATalog
+
+.. code-block:: python
+
+	CONFigure:BASE:FDCorrection:CTABle:CATalog
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.CorrectionTable_.Catalog.Catalog
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Pending
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:GENerator:CONDition:PENDing
+
+.. code-block:: python
+
+	STATus:GENerator:CONDition:PENDing
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Generator_.Condition_.Pending.Pending
+	:members:
+	:undoc-members:
+	:noindex:

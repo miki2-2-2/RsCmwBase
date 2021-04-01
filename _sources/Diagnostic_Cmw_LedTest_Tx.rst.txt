@@ -1,0 +1,20 @@
+Tx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:CMW<CmwVariant>:LEDTest:TX
+
+.. code-block:: python
+
+	DIAGnostic:CMW<CmwVariant>:LEDTest:TX
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Cmw_.LedTest_.Tx.Tx
+	:members:
+	:undoc-members:
+	:noindex:

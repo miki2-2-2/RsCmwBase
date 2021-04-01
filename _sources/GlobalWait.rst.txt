@@ -1,0 +1,20 @@
+GlobalWait
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: *GWAI
+
+.. code-block:: python
+
+	*GWAI
+
+
+
+.. autoclass:: RsCmwBase.Implementations.GlobalWait.GlobalWait
+	:members:
+	:undoc-members:
+	:noindex:

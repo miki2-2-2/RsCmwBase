@@ -1,0 +1,20 @@
+Join
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SPOint:JOIN
+
+.. code-block:: python
+
+	CONFigure:SPOint:JOIN
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Spoint_.Join.Join
+	:members:
+	:undoc-members:
+	:noindex:

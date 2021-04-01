@@ -1,0 +1,30 @@
+Bits
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Condition_.Bits.Bits
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.status.condition.bits.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Status_Condition_Bits_Cataloge.rst
+	Status_Condition_Bits_All.rst
+	Status_Condition_Bits_Count.rst

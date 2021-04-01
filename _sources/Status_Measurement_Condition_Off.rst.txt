@@ -1,0 +1,20 @@
+Off
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:MEASurement:CONDition:OFF
+
+.. code-block:: python
+
+	STATus:MEASurement:CONDition:OFF
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Measurement_.Condition_.Off.Off
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Functions
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:FUNCtions
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:FUNCtions
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.Functions.Functions
+	:members:
+	:undoc-members:
+	:noindex:

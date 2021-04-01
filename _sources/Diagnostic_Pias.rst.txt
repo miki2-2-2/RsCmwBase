@@ -1,0 +1,40 @@
+Pias
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:PIAS:HOST
+	single: DIAGnostic:PIAS:ID
+
+.. code-block:: python
+
+	DIAGnostic:PIAS:HOST
+	DIAGnostic:PIAS:ID
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Pias.Pias
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.pias.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Pias_Scan.rst
+	Diagnostic_Pias_Connect.rst

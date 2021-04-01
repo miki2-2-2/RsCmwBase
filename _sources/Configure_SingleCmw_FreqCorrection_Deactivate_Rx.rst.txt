@@ -1,0 +1,37 @@
+Rx
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:CMWS:FDCorrection:DEACtivate:RX
+
+.. code-block:: python
+
+	CONFigure:CMWS:FDCorrection:DEACtivate:RX
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.SingleCmw_.FreqCorrection_.Deactivate_.Rx.Rx
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.singleCmw.freqCorrection.deactivate.rx.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_SingleCmw_FreqCorrection_Deactivate_Rx_All.rst

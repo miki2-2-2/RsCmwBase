@@ -1,0 +1,20 @@
+Snumber
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:BASE:MCMW:SNUMber
+
+.. code-block:: python
+
+	FETCh:BASE:MCMW:SNUMber
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MultiCmw_.Snumber.Snumber
+	:members:
+	:undoc-members:
+	:noindex:

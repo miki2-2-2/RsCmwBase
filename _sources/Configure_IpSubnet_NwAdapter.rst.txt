@@ -1,0 +1,36 @@
+NwAdapter<NwAdapter>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Adapter1 .. Adapter5
+	rc = driver.configure.ipSubnet.nwAdapter.repcap_nwAdapter_get()
+	driver.configure.ipSubnet.nwAdapter.repcap_nwAdapter_set(repcap.NwAdapter.Adapter1)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:IPSet:NWADapter<NwAdapter>
+
+.. code-block:: python
+
+	CONFigure:BASE:IPSet:NWADapter<NwAdapter>
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter.NwAdapter
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.ipSubnet.nwAdapter.clone()

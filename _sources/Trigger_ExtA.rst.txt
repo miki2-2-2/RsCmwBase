@@ -1,0 +1,41 @@
+ExtA
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRIGger:BASE:EXTA:SOURce
+	single: TRIGger:BASE:EXTA:DIRection
+	single: TRIGger:BASE:EXTA:SLOPe
+
+.. code-block:: python
+
+	TRIGger:BASE:EXTA:SOURce
+	TRIGger:BASE:EXTA:DIRection
+	TRIGger:BASE:EXTA:SLOPe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trigger_.ExtA.ExtA
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trigger.extA.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trigger_ExtA_Catalog.rst

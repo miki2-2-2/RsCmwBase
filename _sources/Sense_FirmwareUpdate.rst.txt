@@ -1,0 +1,20 @@
+FirmwareUpdate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe:FWUPdate:INFO
+
+.. code-block:: python
+
+	SENSe:FWUPdate:INFO
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense_.FirmwareUpdate.FirmwareUpdate
+	:members:
+	:undoc-members:
+	:noindex:

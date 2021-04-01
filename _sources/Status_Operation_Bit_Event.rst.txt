@@ -1,0 +1,20 @@
+Event
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:OPERation:BIT<BitNr>:EVENt
+
+.. code-block:: python
+
+	STATus:OPERation:BIT<BitNr>:EVENt
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Operation_.Bit_.Event.Event
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,22 @@
+Syntax
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:HELP:SYNTax
+	single: DIAGnostic:HELP:SYNTax:ALL
+
+.. code-block:: python
+
+	DIAGnostic:HELP:SYNTax
+	DIAGnostic:HELP:SYNTax:ALL
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Help_.Syntax.Syntax
+	:members:
+	:undoc-members:
+	:noindex:

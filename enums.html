@@ -1,0 +1,917 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Enums &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="RepCaps" href="repcap.html" />
+    <link rel="prev" title="Getting Started" href="GettingStarted.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Enums</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adjuststatus">AdjustStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#baseadjstate">BaseAdjState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boxnumber">BoxNumber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#byteorder">ByteOrder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#catalogformat">CatalogFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cmwcurrentstatus">CmwCurrentStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cmwmode">CmwMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cmwsetstatus">CmwSetStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#colorset">ColorSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#corrresult">CorrResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataformat">DataFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitangle">DefaultUnitAngle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitcapacity">DefaultUnitCapacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitcharge">DefaultUnitCharge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitconductance">DefaultUnitConductance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitcurrent">DefaultUnitCurrent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitenergy">DefaultUnitEnergy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitfrequency">DefaultUnitFrequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitlenght">DefaultUnitLenght</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitpower">DefaultUnitPower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitresistor">DefaultUnitResistor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunittemperature">DefaultUnitTemperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunittime">DefaultUnitTime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defaultunitvoltage">DefaultUnitVoltage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diagloggigmode">DiagLoggigMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diagloggingdevice">DiagLoggingDevice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#directionio">DirectionIo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displaylanguage">DisplayLanguage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displaymode">DisplayMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displaystrategy">DisplayStrategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#expertsetup">ExpertSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#expressionmode">ExpressionMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fanmode">FanMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fonttype">FontType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#joinaction">JoinAction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mutexaction">MutexAction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mutexstate">MutexState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operationmode">OperationMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oscillatortype">OscillatorType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#producttype">ProductType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remotetraceenable">RemoteTraceEnable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remotetracefileformat">RemoteTraceFileFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remotetracestartmode">RemoteTraceStartMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remotetracestopmode">RemoteTraceStopMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resourcestate">ResourceState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rfconverterinpath">RfConverterInPath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rollkeymode">RollkeyMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rxtxdirection">RxTxDirection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#screenshotformat">ScreenshotFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#segment">Segment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#signalslope">SignalSlope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#socketprotocol">SocketProtocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sourceintext">SourceIntExt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#statregformat">StatRegFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#storageplace">StoragePlace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#subnetscope">SubnetScope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#syncpolling">SyncPolling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#syncresult">SyncResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#textformatting">TextFormatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#type">Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#userrole">UserRole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#validityscope">ValidityScope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#validityscopea">ValidityScopeA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#validityscopeb">ValidityScopeB</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Enums</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/enums.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="enums">
+<h1>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adjuststatus">
+<h2>AdjustStatus<a class="headerlink" href="#adjuststatus" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">AdjustStatus</span><span class="o">.</span><span class="n">ADJust</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">ADJust</span> <span class="o">|</span> <span class="n">NADJust</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="baseadjstate">
+<h2>BaseAdjState<a class="headerlink" href="#baseadjstate" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">BaseAdjState</span><span class="o">.</span><span class="n">ADJusted</span>
+<span class="c1"># All values (8x):</span>
+<span class="n">ADJusted</span> <span class="o">|</span> <span class="n">AUTonomous</span> <span class="o">|</span> <span class="n">COUPled</span> <span class="o">|</span> <span class="n">INValid</span> <span class="o">|</span> <span class="n">OFF</span> <span class="o">|</span> <span class="n">ON</span> <span class="o">|</span> <span class="n">PENDing</span> <span class="o">|</span> <span class="n">RDY</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="boxnumber">
+<h2>BoxNumber<a class="headerlink" href="#boxnumber" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">BoxNumber</span><span class="o">.</span><span class="n">BOX1</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">BoxNumber</span><span class="o">.</span><span class="n">NAV</span>
+<span class="c1"># All values (9x):</span>
+<span class="n">BOX1</span> <span class="o">|</span> <span class="n">BOX2</span> <span class="o">|</span> <span class="n">BOX3</span> <span class="o">|</span> <span class="n">BOX4</span> <span class="o">|</span> <span class="n">BOX5</span> <span class="o">|</span> <span class="n">BOX6</span> <span class="o">|</span> <span class="n">BOX7</span> <span class="o">|</span> <span class="n">BOX8</span>
+<span class="n">NAV</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="byteorder">
+<h2>ByteOrder<a class="headerlink" href="#byteorder" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ByteOrder</span><span class="o">.</span><span class="n">NORMal</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">NORMal</span> <span class="o">|</span> <span class="n">SWAPped</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="catalogformat">
+<h2>CatalogFormat<a class="headerlink" href="#catalogformat" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">CatalogFormat</span><span class="o">.</span><span class="n">ALL</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">ALL</span> <span class="o">|</span> <span class="n">WTIMe</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cmwcurrentstatus">
+<h2>CmwCurrentStatus<a class="headerlink" href="#cmwcurrentstatus" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">CmwCurrentStatus</span><span class="o">.</span><span class="n">ERRor</span>
+<span class="c1"># All values (6x):</span>
+<span class="n">ERRor</span> <span class="o">|</span> <span class="n">MCCNconnected</span> <span class="o">|</span> <span class="n">MCMW</span> <span class="o">|</span> <span class="n">PCINconnected</span> <span class="o">|</span> <span class="n">SALone</span> <span class="o">|</span> <span class="n">STBY</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cmwmode">
+<h2>CmwMode<a class="headerlink" href="#cmwmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">CmwMode</span><span class="o">.</span><span class="n">GENerator</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">GENerator</span> <span class="o">|</span> <span class="n">LISTener</span> <span class="o">|</span> <span class="n">STANdalone</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cmwsetstatus">
+<h2>CmwSetStatus<a class="headerlink" href="#cmwsetstatus" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">CmwSetStatus</span><span class="o">.</span><span class="n">MCMW</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">MCMW</span> <span class="o">|</span> <span class="n">SALone</span> <span class="o">|</span> <span class="n">STBY</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="colorset">
+<h2>ColorSet<a class="headerlink" href="#colorset" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ColorSet</span><span class="o">.</span><span class="n">DEF</span>
+<span class="c1"># All values (1x):</span>
+<span class="n">DEF</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="corrresult">
+<h2>CorrResult<a class="headerlink" href="#corrresult" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">CorrResult</span><span class="o">.</span><span class="n">FAIL</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">FAIL</span> <span class="o">|</span> <span class="n">IPR</span> <span class="o">|</span> <span class="n">NCAP</span> <span class="o">|</span> <span class="n">PASS</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dataformat">
+<h2>DataFormat<a class="headerlink" href="#dataformat" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DataFormat</span><span class="o">.</span><span class="n">ASCii</span>
+<span class="c1"># All values (8x):</span>
+<span class="n">ASCii</span> <span class="o">|</span> <span class="n">BINary</span> <span class="o">|</span> <span class="n">HEXadecimal</span> <span class="o">|</span> <span class="n">INTeger</span> <span class="o">|</span> <span class="n">OCTal</span> <span class="o">|</span> <span class="n">PACKed</span> <span class="o">|</span> <span class="n">REAL</span> <span class="o">|</span> <span class="n">UINTeger</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitangle">
+<h2>DefaultUnitAngle<a class="headerlink" href="#defaultunitangle" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitAngle</span><span class="o">.</span><span class="n">DEG</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">DEG</span> <span class="o">|</span> <span class="n">GRAD</span> <span class="o">|</span> <span class="n">RAD</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitcapacity">
+<h2>DefaultUnitCapacity<a class="headerlink" href="#defaultunitcapacity" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCapacity</span><span class="o">.</span><span class="n">AF</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCapacity</span><span class="o">.</span><span class="n">UF</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">AF</span> <span class="o">|</span> <span class="n">EXF</span> <span class="o">|</span> <span class="n">F</span> <span class="o">|</span> <span class="n">FF</span> <span class="o">|</span> <span class="n">GF</span> <span class="o">|</span> <span class="n">KF</span> <span class="o">|</span> <span class="n">MF</span> <span class="o">|</span> <span class="n">MIF</span>
+<span class="n">NF</span> <span class="o">|</span> <span class="n">PEF</span> <span class="o">|</span> <span class="n">PF</span> <span class="o">|</span> <span class="n">TF</span> <span class="o">|</span> <span class="n">UF</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitcharge">
+<h2>DefaultUnitCharge<a class="headerlink" href="#defaultunitcharge" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCharge</span><span class="o">.</span><span class="n">AC</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCharge</span><span class="o">.</span><span class="n">UC</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">AC</span> <span class="o">|</span> <span class="n">C</span> <span class="o">|</span> <span class="n">EXC</span> <span class="o">|</span> <span class="n">FC</span> <span class="o">|</span> <span class="n">GC</span> <span class="o">|</span> <span class="n">KC</span> <span class="o">|</span> <span class="n">MC</span> <span class="o">|</span> <span class="n">MIC</span>
+<span class="n">NC</span> <span class="o">|</span> <span class="n">PC</span> <span class="o">|</span> <span class="n">PEC</span> <span class="o">|</span> <span class="n">TC</span> <span class="o">|</span> <span class="n">UC</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitconductance">
+<h2>DefaultUnitConductance<a class="headerlink" href="#defaultunitconductance" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitConductance</span><span class="o">.</span><span class="n">ASIE</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitConductance</span><span class="o">.</span><span class="n">USIE</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">ASIE</span> <span class="o">|</span> <span class="n">EXSie</span> <span class="o">|</span> <span class="n">FSIE</span> <span class="o">|</span> <span class="n">GSIE</span> <span class="o">|</span> <span class="n">KSIE</span> <span class="o">|</span> <span class="n">MISie</span> <span class="o">|</span> <span class="n">MSIE</span> <span class="o">|</span> <span class="n">NSIE</span>
+<span class="n">PESie</span> <span class="o">|</span> <span class="n">PSIE</span> <span class="o">|</span> <span class="n">SIE</span> <span class="o">|</span> <span class="n">TSIE</span> <span class="o">|</span> <span class="n">USIE</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitcurrent">
+<h2>DefaultUnitCurrent<a class="headerlink" href="#defaultunitcurrent" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCurrent</span><span class="o">.</span><span class="n">A</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitCurrent</span><span class="o">.</span><span class="n">UA</span>
+<span class="c1"># All values (18x):</span>
+<span class="n">A</span> <span class="o">|</span> <span class="n">AA</span> <span class="o">|</span> <span class="n">DBA</span> <span class="o">|</span> <span class="n">DBMA</span> <span class="o">|</span> <span class="n">DBNA</span> <span class="o">|</span> <span class="n">DBPA</span> <span class="o">|</span> <span class="n">DBUA</span> <span class="o">|</span> <span class="n">EXA</span>
+<span class="n">FA</span> <span class="o">|</span> <span class="n">GA</span> <span class="o">|</span> <span class="n">KA</span> <span class="o">|</span> <span class="n">MA</span> <span class="o">|</span> <span class="n">MAA</span> <span class="o">|</span> <span class="n">NA</span> <span class="o">|</span> <span class="n">PA</span> <span class="o">|</span> <span class="n">PEA</span>
+<span class="n">TA</span> <span class="o">|</span> <span class="n">UA</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitenergy">
+<h2>DefaultUnitEnergy<a class="headerlink" href="#defaultunitenergy" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitEnergy</span><span class="o">.</span><span class="n">AJ</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitEnergy</span><span class="o">.</span><span class="n">UJ</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">AJ</span> <span class="o">|</span> <span class="n">EXJ</span> <span class="o">|</span> <span class="n">FJ</span> <span class="o">|</span> <span class="n">GJ</span> <span class="o">|</span> <span class="n">J</span> <span class="o">|</span> <span class="n">KJ</span> <span class="o">|</span> <span class="n">MIJ</span> <span class="o">|</span> <span class="n">MJ</span>
+<span class="n">NJ</span> <span class="o">|</span> <span class="n">PEJ</span> <span class="o">|</span> <span class="n">PJ</span> <span class="o">|</span> <span class="n">TJ</span> <span class="o">|</span> <span class="n">UJ</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitfrequency">
+<h2>DefaultUnitFrequency<a class="headerlink" href="#defaultunitfrequency" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitFrequency</span><span class="o">.</span><span class="n">AHZ</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitFrequency</span><span class="o">.</span><span class="n">UHZ</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">AHZ</span> <span class="o">|</span> <span class="n">EXHZ</span> <span class="o">|</span> <span class="n">FHZ</span> <span class="o">|</span> <span class="n">GHZ</span> <span class="o">|</span> <span class="n">HZ</span> <span class="o">|</span> <span class="n">KHZ</span> <span class="o">|</span> <span class="n">MHZ</span> <span class="o">|</span> <span class="n">MIHZ</span>
+<span class="n">NHZ</span> <span class="o">|</span> <span class="n">PEHZ</span> <span class="o">|</span> <span class="n">PHZ</span> <span class="o">|</span> <span class="n">THZ</span> <span class="o">|</span> <span class="n">UHZ</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitlenght">
+<h2>DefaultUnitLenght<a class="headerlink" href="#defaultunitlenght" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitLenght</span><span class="o">.</span><span class="n">AM</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitLenght</span><span class="o">.</span><span class="n">UM</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">AM</span> <span class="o">|</span> <span class="n">EXM</span> <span class="o">|</span> <span class="n">FM</span> <span class="o">|</span> <span class="n">GM</span> <span class="o">|</span> <span class="n">KM</span> <span class="o">|</span> <span class="n">M</span> <span class="o">|</span> <span class="n">MAM</span> <span class="o">|</span> <span class="n">MM</span>
+<span class="n">NM</span> <span class="o">|</span> <span class="n">PEM</span> <span class="o">|</span> <span class="n">PM</span> <span class="o">|</span> <span class="n">TM</span> <span class="o">|</span> <span class="n">UM</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitpower">
+<h2>DefaultUnitPower<a class="headerlink" href="#defaultunitpower" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitPower</span><span class="o">.</span><span class="n">AW</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitPower</span><span class="o">.</span><span class="n">W</span>
+<span class="c1"># All values (19x):</span>
+<span class="n">AW</span> <span class="o">|</span> <span class="n">DBC</span> <span class="o">|</span> <span class="n">DBMW</span> <span class="o">|</span> <span class="n">DBNW</span> <span class="o">|</span> <span class="n">DBPW</span> <span class="o">|</span> <span class="n">DBUW</span> <span class="o">|</span> <span class="n">DBW</span> <span class="o">|</span> <span class="n">EXW</span>
+<span class="n">FW</span> <span class="o">|</span> <span class="n">GW</span> <span class="o">|</span> <span class="n">KW</span> <span class="o">|</span> <span class="n">MIW</span> <span class="o">|</span> <span class="n">MW</span> <span class="o">|</span> <span class="n">NW</span> <span class="o">|</span> <span class="n">PEW</span> <span class="o">|</span> <span class="n">PW</span>
+<span class="n">TW</span> <span class="o">|</span> <span class="n">UW</span> <span class="o">|</span> <span class="n">W</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitresistor">
+<h2>DefaultUnitResistor<a class="headerlink" href="#defaultunitresistor" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitResistor</span><span class="o">.</span><span class="n">AOHM</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitResistor</span><span class="o">.</span><span class="n">UOHM</span>
+<span class="c1"># All values (13x):</span>
+<span class="n">AOHM</span> <span class="o">|</span> <span class="n">EXOHm</span> <span class="o">|</span> <span class="n">FOHM</span> <span class="o">|</span> <span class="n">GOHM</span> <span class="o">|</span> <span class="n">KOHM</span> <span class="o">|</span> <span class="n">MIOHm</span> <span class="o">|</span> <span class="n">MOHM</span> <span class="o">|</span> <span class="n">NOHM</span>
+<span class="n">OHM</span> <span class="o">|</span> <span class="n">PEOHm</span> <span class="o">|</span> <span class="n">POHM</span> <span class="o">|</span> <span class="n">TOHM</span> <span class="o">|</span> <span class="n">UOHM</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunittemperature">
+<h2>DefaultUnitTemperature<a class="headerlink" href="#defaultunittemperature" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTemperature</span><span class="o">.</span><span class="n">C</span>
+<span class="c1"># All values (6x):</span>
+<span class="n">C</span> <span class="o">|</span> <span class="n">CEL</span> <span class="o">|</span> <span class="n">F</span> <span class="o">|</span> <span class="n">FAR</span> <span class="o">|</span> <span class="n">K</span> <span class="o">|</span> <span class="n">KEL</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunittime">
+<h2>DefaultUnitTime<a class="headerlink" href="#defaultunittime" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTime</span><span class="o">.</span><span class="n">AS</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitTime</span><span class="o">.</span><span class="n">US</span>
+<span class="c1"># All values (18x):</span>
+<span class="n">AS</span> <span class="o">|</span> <span class="n">EXS</span> <span class="o">|</span> <span class="n">FS</span> <span class="o">|</span> <span class="n">GS</span> <span class="o">|</span> <span class="n">H</span> <span class="o">|</span> <span class="n">HOUR</span> <span class="o">|</span> <span class="n">KS</span> <span class="o">|</span> <span class="n">M</span>
+<span class="n">MAS</span> <span class="o">|</span> <span class="n">MIN</span> <span class="o">|</span> <span class="n">MS</span> <span class="o">|</span> <span class="n">NS</span> <span class="o">|</span> <span class="n">PES</span> <span class="o">|</span> <span class="n">PS</span> <span class="o">|</span> <span class="n">S</span> <span class="o">|</span> <span class="n">SEC</span>
+<span class="n">TS</span> <span class="o">|</span> <span class="n">US</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaultunitvoltage">
+<h2>DefaultUnitVoltage<a class="headerlink" href="#defaultunitvoltage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitVoltage</span><span class="o">.</span><span class="n">AV</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DefaultUnitVoltage</span><span class="o">.</span><span class="n">V</span>
+<span class="c1"># All values (18x):</span>
+<span class="n">AV</span> <span class="o">|</span> <span class="n">DBMV</span> <span class="o">|</span> <span class="n">DBNV</span> <span class="o">|</span> <span class="n">DBPV</span> <span class="o">|</span> <span class="n">DBUV</span> <span class="o">|</span> <span class="n">DBV</span> <span class="o">|</span> <span class="n">EXV</span> <span class="o">|</span> <span class="n">FV</span>
+<span class="n">GV</span> <span class="o">|</span> <span class="n">KV</span> <span class="o">|</span> <span class="n">MAV</span> <span class="o">|</span> <span class="n">MV</span> <span class="o">|</span> <span class="n">NV</span> <span class="o">|</span> <span class="n">PEV</span> <span class="o">|</span> <span class="n">PV</span> <span class="o">|</span> <span class="n">TV</span>
+<span class="n">UV</span> <span class="o">|</span> <span class="n">V</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="diagloggigmode">
+<h2>DiagLoggigMode<a class="headerlink" href="#diagloggigmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DiagLoggigMode</span><span class="o">.</span><span class="n">DETailed</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">DETailed</span> <span class="o">|</span> <span class="n">OFF</span> <span class="o">|</span> <span class="n">SIMPle</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="diagloggingdevice">
+<h2>DiagLoggingDevice<a class="headerlink" href="#diagloggingdevice" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DiagLoggingDevice</span><span class="o">.</span><span class="n">ALL</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">ALL</span> <span class="o">|</span> <span class="n">DEBug</span> <span class="o">|</span> <span class="n">MEMory</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="directionio">
+<h2>DirectionIo<a class="headerlink" href="#directionio" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DirectionIo</span><span class="o">.</span><span class="n">IN</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">IN</span> <span class="o">|</span> <span class="n">OUT</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="displaylanguage">
+<h2>DisplayLanguage<a class="headerlink" href="#displaylanguage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayLanguage</span><span class="o">.</span><span class="n">AR</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayLanguage</span><span class="o">.</span><span class="n">ZH</span>
+<span class="c1"># All values (14x):</span>
+<span class="n">AR</span> <span class="o">|</span> <span class="n">CS</span> <span class="o">|</span> <span class="n">DA</span> <span class="o">|</span> <span class="n">DE</span> <span class="o">|</span> <span class="n">EN</span> <span class="o">|</span> <span class="n">ES</span> <span class="o">|</span> <span class="n">FR</span> <span class="o">|</span> <span class="n">IT</span>
+<span class="n">JA</span> <span class="o">|</span> <span class="n">KO</span> <span class="o">|</span> <span class="n">RU</span> <span class="o">|</span> <span class="n">SV</span> <span class="o">|</span> <span class="n">TR</span> <span class="o">|</span> <span class="n">ZH</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="displaymode">
+<h2>DisplayMode<a class="headerlink" href="#displaymode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayMode</span><span class="o">.</span><span class="n">AUTomatic</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">AUTomatic</span> <span class="o">|</span> <span class="n">MANual</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="displaystrategy">
+<h2>DisplayStrategy<a class="headerlink" href="#displaystrategy" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayStrategy</span><span class="o">.</span><span class="n">BYLayout</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">BYLayout</span> <span class="o">|</span> <span class="n">OFF</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="expertsetup">
+<h2>ExpertSetup<a class="headerlink" href="#expertsetup" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ExpertSetup</span><span class="o">.</span><span class="n">BBG1</span>
+<span class="c1"># Last value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ExpertSetup</span><span class="o">.</span><span class="n">SUW7</span>
+<span class="c1"># All values (101x):</span>
+<span class="n">BBG1</span> <span class="o">|</span> <span class="n">BBG2</span> <span class="o">|</span> <span class="n">BBG3</span> <span class="o">|</span> <span class="n">BBG4</span> <span class="o">|</span> <span class="n">BBG5</span> <span class="o">|</span> <span class="n">BBG6</span> <span class="o">|</span> <span class="n">BBG7</span> <span class="o">|</span> <span class="n">BBM1</span>
+<span class="n">BBM2</span> <span class="o">|</span> <span class="n">BBM3</span> <span class="o">|</span> <span class="n">BBM4</span> <span class="o">|</span> <span class="n">BBM5</span> <span class="o">|</span> <span class="n">BBM6</span> <span class="o">|</span> <span class="n">BBM7</span> <span class="o">|</span> <span class="n">INValid</span> <span class="o">|</span> <span class="n">PANY</span>
+<span class="n">PI1</span> <span class="o">|</span> <span class="n">PI2</span> <span class="o">|</span> <span class="n">PO1</span> <span class="o">|</span> <span class="n">PO2</span> <span class="o">|</span> <span class="n">R11</span> <span class="o">|</span> <span class="n">R118</span> <span class="o">|</span> <span class="n">R11Ci</span> <span class="o">|</span> <span class="n">R11Co</span>
+<span class="n">R11O</span> <span class="o">|</span> <span class="n">R12</span> <span class="o">|</span> <span class="n">R12Ci</span> <span class="o">|</span> <span class="n">R12Co</span> <span class="o">|</span> <span class="n">R13</span> <span class="o">|</span> <span class="n">R13Ci</span> <span class="o">|</span> <span class="n">R13Co</span> <span class="o">|</span> <span class="n">R13O</span>
+<span class="n">R14</span> <span class="o">|</span> <span class="n">R14Ci</span> <span class="o">|</span> <span class="n">R14Co</span> <span class="o">|</span> <span class="n">R15</span> <span class="o">|</span> <span class="n">R16</span> <span class="o">|</span> <span class="n">R17</span> <span class="o">|</span> <span class="n">R18</span> <span class="o">|</span> <span class="n">R1CI</span>
+<span class="n">R1CO</span> <span class="o">|</span> <span class="n">R1O</span> <span class="o">|</span> <span class="n">R21Ci</span> <span class="o">|</span> <span class="n">R21Co</span> <span class="o">|</span> <span class="n">R21O</span> <span class="o">|</span> <span class="n">R22Ci</span> <span class="o">|</span> <span class="n">R22Co</span> <span class="o">|</span> <span class="n">R23Ci</span>
+<span class="n">R23Co</span> <span class="o">|</span> <span class="n">R23O</span> <span class="o">|</span> <span class="n">R24Ci</span> <span class="o">|</span> <span class="n">R24Co</span> <span class="o">|</span> <span class="n">R2CI</span> <span class="o">|</span> <span class="n">R2CO</span> <span class="o">|</span> <span class="n">R31Ci</span> <span class="o">|</span> <span class="n">R31Co</span>
+<span class="n">R31O</span> <span class="o">|</span> <span class="n">R32Ci</span> <span class="o">|</span> <span class="n">R32Co</span> <span class="o">|</span> <span class="n">R33Ci</span> <span class="o">|</span> <span class="n">R33Co</span> <span class="o">|</span> <span class="n">R33O</span> <span class="o">|</span> <span class="n">R34Ci</span> <span class="o">|</span> <span class="n">R34Co</span>
+<span class="n">R3CI</span> <span class="o">|</span> <span class="n">R3CO</span> <span class="o">|</span> <span class="n">R3O</span> <span class="o">|</span> <span class="n">R41Ci</span> <span class="o">|</span> <span class="n">R41Co</span> <span class="o">|</span> <span class="n">R41O</span> <span class="o">|</span> <span class="n">R42Ci</span> <span class="o">|</span> <span class="n">R42Co</span>
+<span class="n">R43Ci</span> <span class="o">|</span> <span class="n">R43Co</span> <span class="o">|</span> <span class="n">R43O</span> <span class="o">|</span> <span class="n">R44Ci</span> <span class="o">|</span> <span class="n">R44Co</span> <span class="o">|</span> <span class="n">R4CI</span> <span class="o">|</span> <span class="n">R4CO</span> <span class="o">|</span> <span class="n">RRX1</span>
+<span class="n">RRX2</span> <span class="o">|</span> <span class="n">RRX3</span> <span class="o">|</span> <span class="n">RRX4</span> <span class="o">|</span> <span class="n">RTX1</span> <span class="o">|</span> <span class="n">RTX2</span> <span class="o">|</span> <span class="n">RTX3</span> <span class="o">|</span> <span class="n">RTX4</span> <span class="o">|</span> <span class="n">SUU1</span>
+<span class="n">SUU2</span> <span class="o">|</span> <span class="n">SUU3</span> <span class="o">|</span> <span class="n">SUU4</span> <span class="o">|</span> <span class="n">SUU5</span> <span class="o">|</span> <span class="n">SUU6</span> <span class="o">|</span> <span class="n">SUU7</span> <span class="o">|</span> <span class="n">SUW1</span> <span class="o">|</span> <span class="n">SUW2</span>
+<span class="n">SUW3</span> <span class="o">|</span> <span class="n">SUW4</span> <span class="o">|</span> <span class="n">SUW5</span> <span class="o">|</span> <span class="n">SUW6</span> <span class="o">|</span> <span class="n">SUW7</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="expressionmode">
+<h2>ExpressionMode<a class="headerlink" href="#expressionmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ExpressionMode</span><span class="o">.</span><span class="n">REGex</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">REGex</span> <span class="o">|</span> <span class="n">STRing</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fanmode">
+<h2>FanMode<a class="headerlink" href="#fanmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">FanMode</span><span class="o">.</span><span class="n">HIGH</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">HIGH</span> <span class="o">|</span> <span class="n">LOW</span> <span class="o">|</span> <span class="n">NORMal</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fonttype">
+<h2>FontType<a class="headerlink" href="#fonttype" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">FontType</span><span class="o">.</span><span class="n">DEF</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">DEF</span> <span class="o">|</span> <span class="n">LRG</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="joinaction">
+<h2>JoinAction<a class="headerlink" href="#joinaction" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">JoinAction</span><span class="o">.</span><span class="n">CTASk</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">CTASk</span> <span class="o">|</span> <span class="n">DONE</span> <span class="o">|</span> <span class="n">STASk</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mutexaction">
+<h2>MutexAction<a class="headerlink" href="#mutexaction" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">MutexAction</span><span class="o">.</span><span class="n">DONothing</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">DONothing</span> <span class="o">|</span> <span class="n">RELock</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mutexstate">
+<h2>MutexState<a class="headerlink" href="#mutexstate" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">MutexState</span><span class="o">.</span><span class="n">LOCKed</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">LOCKed</span> <span class="o">|</span> <span class="n">NEWLocked</span> <span class="o">|</span> <span class="n">UNLocked</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operationmode">
+<h2>OperationMode<a class="headerlink" href="#operationmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">OperationMode</span><span class="o">.</span><span class="n">LOCal</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">LOCal</span> <span class="o">|</span> <span class="n">REMote</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="oscillatortype">
+<h2>OscillatorType<a class="headerlink" href="#oscillatortype" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">OscillatorType</span><span class="o">.</span><span class="n">OCXO</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">OCXO</span> <span class="o">|</span> <span class="n">TCXO</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="producttype">
+<h2>ProductType<a class="headerlink" href="#producttype" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ProductType</span><span class="o">.</span><span class="n">ALL</span>
+<span class="c1"># All values (5x):</span>
+<span class="n">ALL</span> <span class="o">|</span> <span class="n">FWA</span> <span class="o">|</span> <span class="n">HWOPtion</span> <span class="o">|</span> <span class="n">SWOPtion</span> <span class="o">|</span> <span class="n">SWPackage</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remotetraceenable">
+<h2>RemoteTraceEnable<a class="headerlink" href="#remotetraceenable" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RemoteTraceEnable</span><span class="o">.</span><span class="n">ANALysis</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">ANALysis</span> <span class="o">|</span> <span class="n">LIVE</span> <span class="o">|</span> <span class="n">OFF</span> <span class="o">|</span> <span class="n">ON</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remotetracefileformat">
+<h2>RemoteTraceFileFormat<a class="headerlink" href="#remotetracefileformat" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RemoteTraceFileFormat</span><span class="o">.</span><span class="n">ASCii</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">ASCii</span> <span class="o">|</span> <span class="n">XML</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remotetracestartmode">
+<h2>RemoteTraceStartMode<a class="headerlink" href="#remotetracestartmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RemoteTraceStartMode</span><span class="o">.</span><span class="n">AUTO</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">AUTO</span> <span class="o">|</span> <span class="n">EXPLicit</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remotetracestopmode">
+<h2>RemoteTraceStopMode<a class="headerlink" href="#remotetracestopmode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RemoteTraceStopMode</span><span class="o">.</span><span class="n">AUTO</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">AUTO</span> <span class="o">|</span> <span class="n">BUFFerfull</span> <span class="o">|</span> <span class="n">ERRor</span> <span class="o">|</span> <span class="n">EXPLicit</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="resourcestate">
+<h2>ResourceState<a class="headerlink" href="#resourcestate" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ResourceState</span><span class="o">.</span><span class="n">ACTive</span>
+<span class="c1"># All values (8x):</span>
+<span class="n">ACTive</span> <span class="o">|</span> <span class="n">ADJusted</span> <span class="o">|</span> <span class="n">INValid</span> <span class="o">|</span> <span class="n">OFF</span> <span class="o">|</span> <span class="n">PENDing</span> <span class="o">|</span> <span class="n">QUEued</span> <span class="o">|</span> <span class="n">RDY</span> <span class="o">|</span> <span class="n">RUN</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rfconverterinpath">
+<h2>RfConverterInPath<a class="headerlink" href="#rfconverterinpath" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RfConverterInPath</span><span class="o">.</span><span class="n">RF1</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">RF1</span> <span class="o">|</span> <span class="n">RF2</span> <span class="o">|</span> <span class="n">RF3</span> <span class="o">|</span> <span class="n">RF4</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rollkeymode">
+<h2>RollkeyMode<a class="headerlink" href="#rollkeymode" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RollkeyMode</span><span class="o">.</span><span class="n">CURSors</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">CURSors</span> <span class="o">|</span> <span class="n">VERTical</span> <span class="o">|</span> <span class="n">ZIGZag</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rxtxdirection">
+<h2>RxTxDirection<a class="headerlink" href="#rxtxdirection" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">RxTxDirection</span><span class="o">.</span><span class="n">RX</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">RX</span> <span class="o">|</span> <span class="n">RXTX</span> <span class="o">|</span> <span class="n">TX</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="screenshotformat">
+<h2>ScreenshotFormat<a class="headerlink" href="#screenshotformat" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ScreenshotFormat</span><span class="o">.</span><span class="n">BMP</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">BMP</span> <span class="o">|</span> <span class="n">JPG</span> <span class="o">|</span> <span class="n">PNG</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="segment">
+<h2>Segment<a class="headerlink" href="#segment" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">Segment</span><span class="o">.</span><span class="n">A</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">A</span> <span class="o">|</span> <span class="n">B</span> <span class="o">|</span> <span class="n">C</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="signalslope">
+<h2>SignalSlope<a class="headerlink" href="#signalslope" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SignalSlope</span><span class="o">.</span><span class="n">FEDGe</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">FEDGe</span> <span class="o">|</span> <span class="n">REDGe</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="socketprotocol">
+<h2>SocketProtocol<a class="headerlink" href="#socketprotocol" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SocketProtocol</span><span class="o">.</span><span class="n">AGILent</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">AGILent</span> <span class="o">|</span> <span class="n">IEEE1174</span> <span class="o">|</span> <span class="n">RAW</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sourceintext">
+<h2>SourceIntExt<a class="headerlink" href="#sourceintext" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SourceIntExt</span><span class="o">.</span><span class="n">EINTernal</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">EINTernal</span> <span class="o">|</span> <span class="n">EXTernal</span> <span class="o">|</span> <span class="n">INTernal</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="statregformat">
+<h2>StatRegFormat<a class="headerlink" href="#statregformat" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">StatRegFormat</span><span class="o">.</span><span class="n">ASCii</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">ASCii</span> <span class="o">|</span> <span class="n">BINary</span> <span class="o">|</span> <span class="n">HEXadecimal</span> <span class="o">|</span> <span class="n">OCTal</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="storageplace">
+<h2>StoragePlace<a class="headerlink" href="#storageplace" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">StoragePlace</span><span class="o">.</span><span class="n">EEPRom</span>
+<span class="c1"># All values (3x):</span>
+<span class="n">EEPRom</span> <span class="o">|</span> <span class="n">FILE</span> <span class="o">|</span> <span class="n">SIM</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="subnetscope">
+<h2>SubnetScope<a class="headerlink" href="#subnetscope" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SubnetScope</span><span class="o">.</span><span class="n">ALL</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">ALL</span> <span class="o">|</span> <span class="n">DALL</span> <span class="o">|</span> <span class="n">DEXTern</span> <span class="o">|</span> <span class="n">EXTern</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="syncpolling">
+<h2>SyncPolling<a class="headerlink" href="#syncpolling" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SyncPolling</span><span class="o">.</span><span class="n">NPOLling</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">NPOLling</span> <span class="o">|</span> <span class="n">POLLing</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="syncresult">
+<h2>SyncResult<a class="headerlink" href="#syncresult" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">SyncResult</span><span class="o">.</span><span class="n">DSTask</span>
+<span class="c1"># All values (5x):</span>
+<span class="n">DSTask</span> <span class="o">|</span> <span class="n">NRDY</span> <span class="o">|</span> <span class="n">NSTask</span> <span class="o">|</span> <span class="n">RDY</span> <span class="o">|</span> <span class="n">TOUT</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="textformatting">
+<h2>TextFormatting<a class="headerlink" href="#textformatting" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">TextFormatting</span><span class="o">.</span><span class="n">TXT</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">TXT</span> <span class="o">|</span> <span class="n">XML</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="type">
+<h2>Type<a class="headerlink" href="#type" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">Type</span><span class="o">.</span><span class="n">CALibration</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">CALibration</span> <span class="o">|</span> <span class="n">FSCorrection</span> <span class="o">|</span> <span class="n">OGCal</span> <span class="o">|</span> <span class="n">UCORrection</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="userrole">
+<h2>UserRole<a class="headerlink" href="#userrole" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">UserRole</span><span class="o">.</span><span class="n">ADMin</span>
+<span class="c1"># All values (5x):</span>
+<span class="n">ADMin</span> <span class="o">|</span> <span class="n">DEVeloper</span> <span class="o">|</span> <span class="n">SERVice</span> <span class="o">|</span> <span class="n">UEXTended</span> <span class="o">|</span> <span class="n">USER</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="validityscope">
+<h2>ValidityScope<a class="headerlink" href="#validityscope" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ValidityScope</span><span class="o">.</span><span class="n">ALL</span>
+<span class="c1"># All values (4x):</span>
+<span class="n">ALL</span> <span class="o">|</span> <span class="n">CLICense</span> <span class="o">|</span> <span class="n">FUNCtional</span> <span class="o">|</span> <span class="n">VALid</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="validityscopea">
+<h2>ValidityScopeA<a class="headerlink" href="#validityscopea" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ValidityScopeA</span><span class="o">.</span><span class="n">GLOBal</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">GLOBal</span> <span class="o">|</span> <span class="n">INSTrument</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="validityscopeb">
+<h2>ValidityScopeB<a class="headerlink" href="#validityscopeb" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ValidityScopeB</span><span class="o">.</span><span class="n">INSTrument</span>
+<span class="c1"># All values (2x):</span>
+<span class="n">INSTrument</span> <span class="o">|</span> <span class="n">SYSTem</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="repcap.html" class="btn btn-neutral float-right" title="RepCaps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="GettingStarted.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

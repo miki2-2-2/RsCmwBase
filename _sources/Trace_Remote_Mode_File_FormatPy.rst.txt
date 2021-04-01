@@ -1,0 +1,20 @@
+FormatPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:FORMat
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:FORMat
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.FormatPy.FormatPy
+	:members:
+	:undoc-members:
+	:noindex:

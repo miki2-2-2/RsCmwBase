@@ -1,0 +1,29 @@
+Mode
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode.Mode
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trace.remote.mode.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trace_Remote_Mode_Display.rst
+	Trace_Remote_Mode_File.rst

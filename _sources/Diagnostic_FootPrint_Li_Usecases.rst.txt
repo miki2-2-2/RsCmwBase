@@ -1,0 +1,20 @@
+Usecases
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:FOOTprint:LI:USECases
+
+.. code-block:: python
+
+	DIAGnostic:FOOTprint:LI:USECases
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.FootPrint_.Li_.Usecases.Usecases
+	:members:
+	:undoc-members:
+	:noindex:

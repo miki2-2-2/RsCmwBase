@@ -1,0 +1,20 @@
+Protocol
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:COMPass:DBASe:TALogging:PROTocol
+
+.. code-block:: python
+
+	DIAGnostic:COMPass:DBASe:TALogging:PROTocol
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Compass_.Dbase_.TaLogging_.Protocol.Protocol
+	:members:
+	:undoc-members:
+	:noindex:

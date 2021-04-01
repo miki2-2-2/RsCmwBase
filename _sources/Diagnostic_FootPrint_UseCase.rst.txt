@@ -1,0 +1,37 @@
+UseCase
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:FOOTprint:USECase:IDS
+
+.. code-block:: python
+
+	DIAGnostic:FOOTprint:USECase:IDS
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.FootPrint_.UseCase.UseCase
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.footPrint.useCase.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_FootPrint_UseCase_Data.rst

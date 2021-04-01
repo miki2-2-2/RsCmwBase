@@ -1,0 +1,39 @@
+Queue
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:ERRor:QUEue:SIZE
+	single: DIAGnostic:ERRor:QUEue:LENGth
+
+.. code-block:: python
+
+	DIAGnostic:ERRor:QUEue:SIZE
+	DIAGnostic:ERRor:QUEue:LENGth
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Error_.Queue.Queue
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.error.queue.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Error_Queue_Push.rst

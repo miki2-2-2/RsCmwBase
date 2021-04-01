@@ -1,0 +1,41 @@
+ExtB
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRIGger:BASE:EXTB:DIRection
+	single: TRIGger:BASE:EXTB:SOURce
+	single: TRIGger:BASE:EXTB:SLOPe
+
+.. code-block:: python
+
+	TRIGger:BASE:EXTB:DIRection
+	TRIGger:BASE:EXTB:SOURce
+	TRIGger:BASE:EXTB:SLOPe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trigger_.ExtB.ExtB
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trigger.extB.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trigger_ExtB_Catalog.rst

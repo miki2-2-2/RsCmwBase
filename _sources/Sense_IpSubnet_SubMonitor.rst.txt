@@ -1,0 +1,26 @@
+SubMonitor
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe:BASE:IPSet:SMONitor:NAME
+	single: SENSe:BASE:IPSet:SMONitor:TYPE
+	single: SENSe:BASE:IPSet:SMONitor:ID
+	single: SENSe:BASE:IPSet:SMONitor:DESCription
+
+.. code-block:: python
+
+	SENSe:BASE:IPSet:SMONitor:NAME
+	SENSe:BASE:IPSet:SMONitor:TYPE
+	SENSe:BASE:IPSet:SMONitor:ID
+	SENSe:BASE:IPSet:SMONitor:DESCription
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense_.IpSubnet_.SubMonitor.SubMonitor
+	:members:
+	:undoc-members:
+	:noindex:

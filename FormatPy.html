@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FormatPy &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Unit" href="Unit.html" />
+    <link rel="prev" title="Select" href="Display_Window_Select.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Configure.html">Configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiCmw.html">MultiCmw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ipc.html">Ipc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cmwd.html">Cmwd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Procedure.html">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Get.html">Get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Correction.html">Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Catalog.html">Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Write.html">Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirmwareUpdate.html">FirmwareUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MacroCreate.html">MacroCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TriggerInvoke.html">TriggerInvoke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalWait.html">GlobalWait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalClearStatus.html">GlobalClearStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoToLocal.html">GoToLocal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Buffer.html">Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SaveState.html">SaveState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecallState.html">RecallState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="RsCmwBase.html">RsCmwBase API Structure</a> &raquo;</li>
+        
+      <li>FormatPy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/FormatPy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="formatpy">
+<h1>FormatPy<a class="headerlink" href="#formatpy" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">SCPI Commands</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">FORMat</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">DATA</span>
+<span class="n">FORMat</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">BORDer</span>
+<span class="n">FORMat</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">DINTerchange</span>
+<span class="n">FORMat</span><span class="p">:</span><span class="n">BASE</span><span class="p">:</span><span class="n">SREGister</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">FormatPy</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>FormatPy commands group definition. 4 total commands, 0 Sub-groups, 4 group commands</p>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">DataStruct</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.DataStruct"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Structure for reading output parameters. Fields:</p>
+<ul class="simple">
+<li><p>Data_Type: enums.DataFormat: ASCii | REAL | BINary | HEXadecimal | OCTal ASCii Numeric data is transferred as ASCII bytes. Floating point numbers are transferred in scientific E notation. REAL Numeric data is transferred in a definite length block as IEEE floating point numbers, see ‘Block Data Format’. BINary | HEXadecimal | OCTal Numeric data is transferred in binary, hexadecimal or octal format.</p></li>
+<li><p>Data_Length: int: The meaning depends on the DataType as listed below. A zero returned by a query means that the default value is used. For ASCii Decimal places of floating point numbers. That means, number of ‘b’ digits in the scientific notation a.bbbbbbE+ccc. Default: six decimal places For REAL Length of floating point numbers in bits: 32 bits = 4 bytes, format #14… 64 bits = 8 bytes, format #18… Default: 64 bits For BINary, HEXadecimal, OCTal Minimum number of digits. If the number is longer, more digits are used. If it is shorter, leading zeros are added. Default: 0, no leading zeros</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_border</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.ByteOrder<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.get_border"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE:BORDer</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">ByteOrder</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">get_border</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>byte_order: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; DataStruct<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.get_data"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE[:DATA]</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">DataStruct</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Selects the format for numeric data transferred to and from the R&amp;S CMW, for example query results.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>structure: for return value, see the help for DataStruct structure arguments.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_dinterchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.get_dinterchange"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE:DINTerchange</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">get_dinterchange</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>dif_format: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_sregister</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; RsCmwBase.enums.StatRegFormat<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.get_sregister"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE:SREGister</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">StatRegFormat</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">get_sregister</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>status_register_format: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_border</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">byte_order</span><span class="p">:</span> <span class="n">RsCmwBase.enums.ByteOrder</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.set_border"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE:BORDer</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">set_border</span><span class="p">(</span><span class="n">byte_order</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">ByteOrder</span><span class="o">.</span><span class="n">NORMal</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param byte_order</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">RsCmwBase.Implementations.FormatPy.FormatPy.DataStruct</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.set_data"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE[:DATA]</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="n">DataStruct</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Selects the format for numeric data transferred to and from the R&amp;S CMW, for example query results.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param value</dt>
+<dd class="field-odd"><p>see the help for DataStruct structure arguments.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_dinterchange</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dif_format</span><span class="p">:</span> <span class="n">bool</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.set_dinterchange"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE:DINTerchange</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">set_dinterchange</span><span class="p">(</span><span class="n">dif_format</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param dif_format</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_sregister</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">status_register_format</span><span class="p">:</span> <span class="n">RsCmwBase.enums.StatRegFormat</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/FormatPy.html#FormatPy.set_sregister"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: FORMat:BASE:SREGister</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">formatPy</span><span class="o">.</span><span class="n">set_sregister</span><span class="p">(</span><span class="n">status_register_format</span> <span class="o">=</span> <span class="n">enums</span><span class="o">.</span><span class="n">StatRegFormat</span><span class="o">.</span><span class="n">ASCii</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>No command help available</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param status_register_format</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Unit.html" class="btn btn-neutral float-right" title="Unit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Display_Window_Select.html" class="btn btn-neutral float-left" title="Select" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

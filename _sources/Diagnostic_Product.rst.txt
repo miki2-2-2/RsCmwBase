@@ -1,0 +1,46 @@
+Product
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:PRODuct:ID
+	single: DIAGnostic:PRODuct:DESCription
+	single: DIAGnostic:PRODuct:CATalog
+	single: DIAGnostic:PRODuct:SELect
+	single: DIAGnostic:PRODuct:GROup
+
+.. code-block:: python
+
+	DIAGnostic:PRODuct:ID
+	DIAGnostic:PRODuct:DESCription
+	DIAGnostic:PRODuct:CATalog
+	DIAGnostic:PRODuct:SELect
+	DIAGnostic:PRODuct:GROup
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Product.Product
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.product.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Product_Time.rst
+	Diagnostic_Product_MacAddress.rst

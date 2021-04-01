@@ -1,0 +1,20 @@
+Gtr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:VXI<VxiInstance>:GTR
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:VXI<VxiInstance>:GTR
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Vxi_.Gtr.Gtr
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../RsCmwBase.html">RsCmwBase API Structure</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">....Internal.Core</span> <span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span> <span class="nn">....Internal.CommandsGroup</span> <span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span> <span class="nn">....Internal</span> <span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span> <span class="nn">....Internal.StructBase</span> <span class="kn">import</span> <span class="n">StructBase</span>
+<span class="kn">from</span> <span class="nn">....Internal.ArgStruct</span> <span class="kn">import</span> <span class="n">ArgStruct</span>
+<span class="kn">from</span> <span class="nn">....Internal.RepeatedCapability</span> <span class="kn">import</span> <span class="n">RepeatedCapability</span>
+<span class="kn">from</span> <span class="nn">....</span> <span class="kn">import</span> <span class="n">enums</span>
+<span class="kn">from</span> <span class="nn">....</span> <span class="kn">import</span> <span class="n">repcap</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="NwAdapter"><a class="viewcode-back" href="../../../../../Configure_IpSubnet_NwAdapter.html#RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter.NwAdapter">[docs]</a><span class="k">class</span> <span class="nc">NwAdapter</span><span class="p">:</span>
+	<span class="sd">&quot;&quot;&quot;NwAdapter commands group definition. 1 total commands, 0 Sub-groups, 1 group commands</span>
+<span class="sd">	Repeated Capability: NwAdapter, default value after init: NwAdapter.Adapter1&quot;&quot;&quot;</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_base</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;nwAdapter&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">rep_cap</span> <span class="o">=</span> <span class="n">RepeatedCapability</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">group_name</span><span class="p">,</span> <span class="s1">&#39;repcap_nwAdapter_get&#39;</span><span class="p">,</span> <span class="s1">&#39;repcap_nwAdapter_set&#39;</span><span class="p">,</span> <span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="o">.</span><span class="n">Adapter1</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">repcap_nwAdapter_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enum_value</span><span class="p">:</span> <span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;Repeated Capability default value numeric suffix.</span>
+<span class="sd">		This value is used, if you do not explicitely set it in the child set/get methods, or if you leave it to NwAdapter.Default</span>
+<span class="sd">		Default value after init: NwAdapter.Adapter1&quot;&quot;&quot;</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">set_repcap_enum_value</span><span class="p">(</span><span class="n">enum_value</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">repcap_nwAdapter_get</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;Returns the current default repeated capability for the child set/get methods&quot;&quot;&quot;</span>
+		<span class="c1"># noinspection PyTypeChecker</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">get_repcap_enum_value</span><span class="p">()</span>
+
+<div class="viewcode-block" id="NwAdapter.set"><a class="viewcode-back" href="../../../../../Configure_IpSubnet_NwAdapter.html#RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter.NwAdapter.set">[docs]</a>	<span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">set_subnet_conform</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">nwAdapter</span><span class="o">=</span><span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="o">.</span><span class="n">Default</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: CONFigure:BASE:IPSet:NWADapter&lt;n&gt; \n</span>
+<span class="sd">		Snippet: driver.configure.ipSubnet.nwAdapter.set(set_subnet_conform = False, nwAdapter = repcap.NwAdapter.Default) \n</span>
+<span class="sd">		Assigns a subnet conform IP address to a network adapter of the instrument, selected via index &lt;n&gt; or returns information</span>
+<span class="sd">		about this network adapter. A query returns &lt;NWAdapterName&gt;, &lt;SetSubnetConform&gt;, &lt;IPAddress&gt;, &lt;Status&gt;. \n</span>
+<span class="sd">			:param set_subnet_conform: 1 | 0 | ON | OFF To assign a subnet conform IP address, set 1 or ON. To try again, set first 0 or OFF, then again 1 or ON. A query returns whether the last set value was 0 or 1.</span>
+<span class="sd">			:param nwAdapter: optional repeated capability selector. Default value: Adapter1 (settable in the interface &#39;NwAdapter&#39;)&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">set_subnet_conform</span><span class="p">)</span>
+		<span class="n">nwAdapter_cmd_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">get_repcap_cmd_value</span><span class="p">(</span><span class="n">nwAdapter</span><span class="p">,</span> <span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;CONFigure:BASE:IPSet:NWADapter</span><span class="si">{</span><span class="n">nwAdapter_cmd_val</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="NwAdapter.GetStruct"><a class="viewcode-back" href="../../../../../Configure_IpSubnet_NwAdapter.html#RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter.NwAdapter.GetStruct">[docs]</a>	<span class="k">class</span> <span class="nc">GetStruct</span><span class="p">(</span><span class="n">StructBase</span><span class="p">):</span>
+		<span class="sd">&quot;&quot;&quot;Response structure. Fields: \n</span>
+<span class="sd">			- Nw_Adapter_Name: str: Name of the network adapter as a string, e.g. &#39;LAN Remote&#39; for n = 1 A returned OFF indicates that the selected value n is not assigned to a network adapter.</span>
+<span class="sd">			- Set_Subnet_Conform: bool: 1 | 0 | ON | OFF To assign a subnet conform IP address, set 1 or ON. To try again, set first 0 or OFF, then again 1 or ON. A query returns whether the last set value was 0 or 1.</span>
+<span class="sd">			- Ip_Address: str: String containing the IP address (to be) assigned, see Status</span>
+<span class="sd">			- Status: enums.AdjustStatus: NADJust | ADJust State indicating whether the returned IP address has been successfully assigned to the network adapter (ADJust) or not (NADJust)&quot;&quot;&quot;</span>
+		<span class="n">__meta_args_list</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_str</span><span class="p">(</span><span class="s1">&#39;Nw_Adapter_Name&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_bool</span><span class="p">(</span><span class="s1">&#39;Set_Subnet_Conform&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_str</span><span class="p">(</span><span class="s1">&#39;Ip_Address&#39;</span><span class="p">),</span>
+			<span class="n">ArgStruct</span><span class="o">.</span><span class="n">scalar_enum</span><span class="p">(</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">AdjustStatus</span><span class="p">)]</span>
+
+		<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+			<span class="n">StructBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Nw_Adapter_Name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Set_Subnet_Conform</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Ip_Address</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">Status</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">AdjustStatus</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="NwAdapter.get"><a class="viewcode-back" href="../../../../../Configure_IpSubnet_NwAdapter.html#RsCmwBase.Implementations.Configure_.IpSubnet_.NwAdapter.NwAdapter.get">[docs]</a>	<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nwAdapter</span><span class="o">=</span><span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="o">.</span><span class="n">Default</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">GetStruct</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: CONFigure:BASE:IPSet:NWADapter&lt;n&gt; \n</span>
+<span class="sd">		Snippet: value: GetStruct = driver.configure.ipSubnet.nwAdapter.get(nwAdapter = repcap.NwAdapter.Default) \n</span>
+<span class="sd">		Assigns a subnet conform IP address to a network adapter of the instrument, selected via index &lt;n&gt; or returns information</span>
+<span class="sd">		about this network adapter. A query returns &lt;NWAdapterName&gt;, &lt;SetSubnetConform&gt;, &lt;IPAddress&gt;, &lt;Status&gt;. \n</span>
+<span class="sd">			:param nwAdapter: optional repeated capability selector. Default value: Adapter1 (settable in the interface &#39;NwAdapter&#39;)</span>
+<span class="sd">			:return: structure: for return value, see the help for GetStruct structure arguments.&quot;&quot;&quot;</span>
+		<span class="n">nwAdapter_cmd_val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">get_repcap_cmd_value</span><span class="p">(</span><span class="n">nwAdapter</span><span class="p">,</span> <span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_struct</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;CONFigure:BASE:IPSet:NWADapter</span><span class="si">{</span><span class="n">nwAdapter_cmd_val</span><span class="si">}</span><span class="s1">?&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">GetStruct</span><span class="p">())</span></div>
+
+	<span class="k">def</span> <span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;NwAdapter&#39;</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing sub-groups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">NwAdapter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

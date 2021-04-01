@@ -1,0 +1,20 @@
+Enable
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:GPIB<GpibInstance>:SELF:ENABle
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:GPIB<GpibInstance>:SELF:ENABle
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Gpib_.Self_.Enable.Enable
+	:members:
+	:undoc-members:
+	:noindex:

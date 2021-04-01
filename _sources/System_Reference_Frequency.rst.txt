@@ -1,0 +1,47 @@
+Frequency<Frequency>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Freq1 .. Freq4
+	rc = driver.system.reference.frequency.repcap_frequency_get()
+	driver.system.reference.frequency.repcap_frequency_set(repcap.Frequency.Freq1)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:REFerence:FREQuency:SOURce
+	single: SYSTem:BASE:REFerence:FREQuency
+
+.. code-block:: python
+
+	SYSTem:BASE:REFerence:FREQuency:SOURce
+	SYSTem:BASE:REFerence:FREQuency
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Reference_.Frequency.Frequency
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.reference.frequency.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Reference_Frequency_Advanced.rst

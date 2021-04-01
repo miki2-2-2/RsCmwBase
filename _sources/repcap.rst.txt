@@ -1,0 +1,213 @@
+RepCaps
+=========
+
+BitNr
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.BitNr.Nr8
+	# Range:
+	Nr8 .. Nr12
+	# All values (5x):
+	Nr8 | Nr9 | Nr10 | Nr11 | Nr12
+
+CmwVariant
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.CmwVariant.Cmw1
+	# Values (2x):
+	Cmw1 | Cmw100
+
+Eout
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.Eout.Eout1
+	# Values (4x):
+	Eout1 | Eout2 | Eout3 | Eout4
+
+FileNr
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.FileNr.Nr1
+	# Values (2x):
+	Nr1 | Nr2
+
+Frequency
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.Frequency.Freq1
+	# Values (4x):
+	Freq1 | Freq2 | Freq3 | Freq4
+
+GpibInstance
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.GpibInstance.Inst1
+	# Range:
+	Inst1 .. Inst32
+	# All values (32x):
+	Inst1 | Inst2 | Inst3 | Inst4 | Inst5 | Inst6 | Inst7 | Inst8
+	Inst9 | Inst10 | Inst11 | Inst12 | Inst13 | Inst14 | Inst15 | Inst16
+	Inst17 | Inst18 | Inst19 | Inst20 | Inst21 | Inst22 | Inst23 | Inst24
+	Inst25 | Inst26 | Inst27 | Inst28 | Inst29 | Inst30 | Inst31 | Inst32
+
+HislipInstance
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.HislipInstance.Inst1
+	# Range:
+	Inst1 .. Inst32
+	# All values (32x):
+	Inst1 | Inst2 | Inst3 | Inst4 | Inst5 | Inst6 | Inst7 | Inst8
+	Inst9 | Inst10 | Inst11 | Inst12 | Inst13 | Inst14 | Inst15 | Inst16
+	Inst17 | Inst18 | Inst19 | Inst20 | Inst21 | Inst22 | Inst23 | Inst24
+	Inst25 | Inst26 | Inst27 | Inst28 | Inst29 | Inst30 | Inst31 | Inst32
+
+IpAddress
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.IpAddress.Addr1
+	# Values (3x):
+	Addr1 | Addr2 | Addr3
+
+NwAdapter
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.NwAdapter.Adapter1
+	# Range:
+	Adapter1 .. Adapter5
+	# All values (5x):
+	Adapter1 | Adapter2 | Adapter3 | Adapter4 | Adapter5
+
+RsibInstance
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.RsibInstance.Inst1
+	# Range:
+	Inst1 .. Inst32
+	# All values (32x):
+	Inst1 | Inst2 | Inst3 | Inst4 | Inst5 | Inst6 | Inst7 | Inst8
+	Inst9 | Inst10 | Inst11 | Inst12 | Inst13 | Inst14 | Inst15 | Inst16
+	Inst17 | Inst18 | Inst19 | Inst20 | Inst21 | Inst22 | Inst23 | Inst24
+	Inst25 | Inst26 | Inst27 | Inst28 | Inst29 | Inst30 | Inst31 | Inst32
+
+RxFilter
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.RxFilter.Nr1
+	# Range:
+	Nr1 .. Nr10
+	# All values (10x):
+	Nr1 | Nr2 | Nr3 | Nr4 | Nr5 | Nr6 | Nr7 | Nr8
+	Nr9 | Nr10
+
+Slot
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.Slot.Nr1
+	# Values (4x):
+	Nr1 | Nr2 | Nr3 | Nr4
+
+SocketInstance
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.SocketInstance.Inst1
+	# Range:
+	Inst1 .. Inst32
+	# All values (32x):
+	Inst1 | Inst2 | Inst3 | Inst4 | Inst5 | Inst6 | Inst7 | Inst8
+	Inst9 | Inst10 | Inst11 | Inst12 | Inst13 | Inst14 | Inst15 | Inst16
+	Inst17 | Inst18 | Inst19 | Inst20 | Inst21 | Inst22 | Inst23 | Inst24
+	Inst25 | Inst26 | Inst27 | Inst28 | Inst29 | Inst30 | Inst31 | Inst32
+
+Trigger
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.Trigger.Trg1
+	# Values (4x):
+	Trg1 | Trg2 | Trg3 | Trg4
+
+TxFilter
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.TxFilter.Nr1
+	# Range:
+	Nr1 .. Nr10
+	# All values (10x):
+	Nr1 | Nr2 | Nr3 | Nr4 | Nr5 | Nr6 | Nr7 | Nr8
+	Nr9 | Nr10
+
+VxiInstance
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.VxiInstance.Inst1
+	# Range:
+	Inst1 .. Inst32
+	# All values (32x):
+	Inst1 | Inst2 | Inst3 | Inst4 | Inst5 | Inst6 | Inst7 | Inst8
+	Inst9 | Inst10 | Inst11 | Inst12 | Inst13 | Inst14 | Inst15 | Inst16
+	Inst17 | Inst18 | Inst19 | Inst20 | Inst21 | Inst22 | Inst23 | Inst24
+	Inst25 | Inst26 | Inst27 | Inst28 | Inst29 | Inst30 | Inst31 | Inst32
+
+Window
+----------------------------------------------------
+
+.. code-block:: python
+
+	# First value:
+	value = repcap.Window.Win1
+	# Range:
+	Win1 .. Win32
+	# All values (32x):
+	Win1 | Win2 | Win3 | Win4 | Win5 | Win6 | Win7 | Win8
+	Win9 | Win10 | Win11 | Win12 | Win13 | Win14 | Win15 | Win16
+	Win17 | Win18 | Win19 | Win20 | Win21 | Win22 | Win23 | Win24
+	Win25 | Win26 | Win27 | Win28 | Win29 | Win30 | Win31 | Win32
+

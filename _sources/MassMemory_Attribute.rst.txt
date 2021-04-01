@@ -1,0 +1,20 @@
+Attribute
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: MMEMory:ATTRibute
+
+.. code-block:: python
+
+	MMEMory:ATTRibute
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MassMemory_.Attribute.Attribute
+	:members:
+	:undoc-members:
+	:noindex:

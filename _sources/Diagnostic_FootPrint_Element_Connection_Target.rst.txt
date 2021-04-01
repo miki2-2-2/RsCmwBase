@@ -1,0 +1,28 @@
+Target
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.FootPrint_.Element_.Connection_.Target.Target
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.footPrint.element.connection.target.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_FootPrint_Element_Connection_Target_Ids.rst

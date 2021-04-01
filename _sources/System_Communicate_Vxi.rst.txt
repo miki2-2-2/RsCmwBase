@@ -1,0 +1,37 @@
+Vxi<VxiInstance>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Inst1 .. Inst32
+	rc = driver.system.communicate.vxi.repcap_vxiInstance_get()
+	driver.system.communicate.vxi.repcap_vxiInstance_set(repcap.VxiInstance.Inst1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Vxi.Vxi
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.vxi.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Vxi_Vresource.rst
+	System_Communicate_Vxi_Gtr.rst

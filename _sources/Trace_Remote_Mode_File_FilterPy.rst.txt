@@ -1,0 +1,20 @@
+FilterPy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:FILTer
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:FILTer
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.FilterPy.FilterPy
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+GlobalClearStatus
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: *GCLS
+
+.. code-block:: python
+
+	*GCLS
+
+
+
+.. autoclass:: RsCmwBase.Implementations.GlobalClearStatus.GlobalClearStatus
+	:members:
+	:undoc-members:
+	:noindex:

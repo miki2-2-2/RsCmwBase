@@ -1,0 +1,36 @@
+Cmw<CmwVariant>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Cmw1 .. Cmw100
+	rc = driver.diagnostic.cmw.repcap_cmwVariant_get()
+	driver.diagnostic.cmw.repcap_cmwVariant_set(repcap.CmwVariant.Cmw1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Cmw.Cmw
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.cmw.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Cmw_LedTest.rst

@@ -1,0 +1,20 @@
+Rdy
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:MEASurement:CONDition:RDY
+
+.. code-block:: python
+
+	STATus:MEASurement:CONDition:RDY
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Measurement_.Condition_.Rdy.Rdy
+	:members:
+	:undoc-members:
+	:noindex:

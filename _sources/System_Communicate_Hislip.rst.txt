@@ -1,0 +1,36 @@
+Hislip<HislipInstance>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Inst1 .. Inst32
+	rc = driver.system.communicate.hislip.repcap_hislipInstance_get()
+	driver.system.communicate.hislip.repcap_hislipInstance_set(repcap.HislipInstance.Inst1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Hislip.Hislip
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.hislip.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Hislip_Vresource.rst

@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RsCmwBase.Implementations.System_.Display &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../repcap.html">RepCaps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../RsCmwBase.html">RsCmwBase API Structure</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>RsCmwBase.Implementations.System_.Display</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for RsCmwBase.Implementations.System_.Display</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">...Internal.Core</span> <span class="kn">import</span> <span class="n">Core</span>
+<span class="kn">from</span> <span class="nn">...Internal.CommandsGroup</span> <span class="kn">import</span> <span class="n">CommandsGroup</span>
+<span class="kn">from</span> <span class="nn">...Internal</span> <span class="kn">import</span> <span class="n">Conversions</span>
+<span class="kn">from</span> <span class="nn">...</span> <span class="kn">import</span> <span class="n">enums</span>
+
+
+<span class="c1"># noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection</span>
+<div class="viewcode-block" id="Display"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display">[docs]</a><span class="k">class</span> <span class="nc">Display</span><span class="p">:</span>
+	<span class="sd">&quot;&quot;&quot;Display commands group definition. 8 total commands, 1 Sub-groups, 6 group commands&quot;&quot;&quot;</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">core</span><span class="p">:</span> <span class="n">Core</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span> <span class="o">=</span> <span class="n">core</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_base</span> <span class="o">=</span> <span class="n">CommandsGroup</span><span class="p">(</span><span class="s2">&quot;display&quot;</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+
+	<span class="nd">@property</span>
+	<span class="k">def</span> <span class="nf">monitor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="sd">&quot;&quot;&quot;monitor commands group. 1 Sub-classes, 1 commands.&quot;&quot;&quot;</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_monitor&#39;</span><span class="p">):</span>
+			<span class="kn">from</span> <span class="nn">.Display_.Monitor</span> <span class="kn">import</span> <span class="n">Monitor</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">_monitor</span> <span class="o">=</span> <span class="n">Monitor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="p">)</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_monitor</span>
+
+<div class="viewcode-block" id="Display.get_update"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.get_update">[docs]</a>	<span class="k">def</span> <span class="nf">get_update</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:DISPlay:UPDate \n</span>
+<span class="sd">		Snippet: value: bool = driver.system.display.get_update() \n</span>
+<span class="sd">		Defines whether the display is updated or not while the instrument is in the remote state. If the display update is</span>
+<span class="sd">		switched off, the normal GUI is replaced by a static image while the instrument is in the remote state. Switching off the</span>
+<span class="sd">		display can speed up the measurement and is the recommended state. See also &#39;Using the Display during Remote Control&#39; \n</span>
+<span class="sd">			:return: displayupdate: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SYSTem:DISPlay:UPDate?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.set_update"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.set_update">[docs]</a>	<span class="k">def</span> <span class="nf">set_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">displayupdate</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:DISPlay:UPDate \n</span>
+<span class="sd">		Snippet: driver.system.display.set_update(displayupdate = False) \n</span>
+<span class="sd">		Defines whether the display is updated or not while the instrument is in the remote state. If the display update is</span>
+<span class="sd">		switched off, the normal GUI is replaced by a static image while the instrument is in the remote state. Switching off the</span>
+<span class="sd">		display can speed up the measurement and is the recommended state. See also &#39;Using the Display during Remote Control&#39; \n</span>
+<span class="sd">			:param displayupdate: ON | 1: Display is shown and updated during remote control. OFF | 0: Display shows static image during remote control.</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">displayupdate</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SYSTem:DISPlay:UPDate </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.get_mwindow"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.get_mwindow">[docs]</a>	<span class="k">def</span> <span class="nf">get_mwindow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:MWINdow \n</span>
+<span class="sd">		Snippet: value: bool = driver.system.display.get_mwindow() \n</span>
+<span class="sd">		Enables or disables the multiple-window mode of the graphical user interface. \n</span>
+<span class="sd">			:return: on_off: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SYSTem:BASE:DISPlay:MWINdow?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_bool</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.set_mwindow"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.set_mwindow">[docs]</a>	<span class="k">def</span> <span class="nf">set_mwindow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">on_off</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:MWINdow \n</span>
+<span class="sd">		Snippet: driver.system.display.set_mwindow(on_off = False) \n</span>
+<span class="sd">		Enables or disables the multiple-window mode of the graphical user interface. \n</span>
+<span class="sd">			:param on_off: 0 | 1 1: multiple-window mode 0: single-window mode</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">bool_to_str</span><span class="p">(</span><span class="n">on_off</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SYSTem:BASE:DISPlay:MWINdow </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="Display.get_color_set"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.get_color_set">[docs]</a>	<span class="k">def</span> <span class="nf">get_color_set</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">ColorSet</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:COLorset \n</span>
+<span class="sd">		Snippet: value: enums.ColorSet = driver.system.display.get_color_set() \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:return: colorset: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SYSTem:BASE:DISPlay:COLorset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">ColorSet</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.set_color_set"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.set_color_set">[docs]</a>	<span class="k">def</span> <span class="nf">set_color_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">colorset</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">ColorSet</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:COLorset \n</span>
+<span class="sd">		Snippet: driver.system.display.set_color_set(colorset = enums.ColorSet.DEF) \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:param colorset: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">colorset</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">ColorSet</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SYSTem:BASE:DISPlay:COLorset </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="Display.get_font_set"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.get_font_set">[docs]</a>	<span class="k">def</span> <span class="nf">get_font_set</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">FontType</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:FONTset \n</span>
+<span class="sd">		Snippet: value: enums.FontType = driver.system.display.get_font_set() \n</span>
+<span class="sd">		Selects the font size for the GUI labels. \n</span>
+<span class="sd">			:return: fonset: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SYSTem:BASE:DISPlay:FONTset?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FontType</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.set_font_set"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.set_font_set">[docs]</a>	<span class="k">def</span> <span class="nf">set_font_set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fonset</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">FontType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:FONTset \n</span>
+<span class="sd">		Snippet: driver.system.display.set_font_set(fonset = enums.FontType.DEF) \n</span>
+<span class="sd">		Selects the font size for the GUI labels. \n</span>
+<span class="sd">			:param fonset: DEF | LRG DEF: Small fonts LRG: Large fonts</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">fonset</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">FontType</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SYSTem:BASE:DISPlay:FONTset </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="Display.get_roll_keymode"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.get_roll_keymode">[docs]</a>	<span class="k">def</span> <span class="nf">get_roll_keymode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">RollkeyMode</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:ROLLkeymode \n</span>
+<span class="sd">		Snippet: value: enums.RollkeyMode = driver.system.display.get_roll_keymode() \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:return: rollkeymode: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SYSTem:BASE:DISPlay:ROLLkeymode?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">RollkeyMode</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.set_roll_keymode"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.set_roll_keymode">[docs]</a>	<span class="k">def</span> <span class="nf">set_roll_keymode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rollkeymode</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">RollkeyMode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:ROLLkeymode \n</span>
+<span class="sd">		Snippet: driver.system.display.set_roll_keymode(rollkeymode = enums.RollkeyMode.CURSors) \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:param rollkeymode: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">rollkeymode</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">RollkeyMode</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SYSTem:BASE:DISPlay:ROLLkeymode </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+	<span class="c1"># noinspection PyTypeChecker</span>
+<div class="viewcode-block" id="Display.get_language"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.get_language">[docs]</a>	<span class="k">def</span> <span class="nf">get_language</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayLanguage</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:LANGuage \n</span>
+<span class="sd">		Snippet: value: enums.DisplayLanguage = driver.system.display.get_language() \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:return: language: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">query_str</span><span class="p">(</span><span class="s1">&#39;SYSTem:BASE:DISPlay:LANGuage?&#39;</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">str_to_scalar_enum</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayLanguage</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Display.set_language"><a class="viewcode-back" href="../../../../System_Display.html#RsCmwBase.Implementations.System_.Display.Display.set_language">[docs]</a>	<span class="k">def</span> <span class="nf">set_language</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">language</span><span class="p">:</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayLanguage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;SCPI: SYSTem:BASE:DISPlay:LANGuage \n</span>
+<span class="sd">		Snippet: driver.system.display.set_language(language = enums.DisplayLanguage.AR) \n</span>
+<span class="sd">		No command help available \n</span>
+<span class="sd">			:param language: No help available</span>
+<span class="sd">		&quot;&quot;&quot;</span>
+		<span class="n">param</span> <span class="o">=</span> <span class="n">Conversions</span><span class="o">.</span><span class="n">enum_scalar_to_str</span><span class="p">(</span><span class="n">language</span><span class="p">,</span> <span class="n">enums</span><span class="o">.</span><span class="n">DisplayLanguage</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;SYSTem:BASE:DISPlay:LANGuage </span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+	<span class="k">def</span> <span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Display&#39;</span><span class="p">:</span>
+		<span class="sd">&quot;&quot;&quot;Clones the group by creating new object from it and its whole existing sub-groups</span>
+<span class="sd">		Also copies all the existing default Repeated Capabilities setting,</span>
+<span class="sd">		which you can change independently without affecting the original group&quot;&quot;&quot;</span>
+		<span class="n">new_group</span> <span class="o">=</span> <span class="n">Display</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_core</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">_base</span><span class="o">.</span><span class="n">synchronize_repcaps</span><span class="p">(</span><span class="n">new_group</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">new_group</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

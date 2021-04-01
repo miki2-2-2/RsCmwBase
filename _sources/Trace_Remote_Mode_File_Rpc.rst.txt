@@ -1,0 +1,20 @@
+Rpc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:RPC
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:RPC
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.Rpc.Rpc
+	:members:
+	:undoc-members:
+	:noindex:

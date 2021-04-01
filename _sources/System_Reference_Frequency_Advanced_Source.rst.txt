@@ -1,0 +1,20 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:REFerence:FREQuency<Frequency>:ADVanced:SOURce
+
+.. code-block:: python
+
+	SYSTem:BASE:REFerence:FREQuency<Frequency>:ADVanced:SOURce
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Reference_.Frequency_.Advanced_.Source.Source
+	:members:
+	:undoc-members:
+	:noindex:

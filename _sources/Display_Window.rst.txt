@@ -1,0 +1,36 @@
+Window<Window>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Win1 .. Win32
+	rc = driver.display.window.repcap_window_get()
+	driver.display.window.repcap_window_set(repcap.Window.Win1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Display_.Window.Window
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.display.window.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Display_Window_Select.rst

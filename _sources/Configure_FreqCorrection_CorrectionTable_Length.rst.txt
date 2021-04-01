@@ -1,0 +1,20 @@
+Length
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FDCorrection:CTABle:LENGth
+
+.. code-block:: python
+
+	CONFigure:BASE:FDCorrection:CTABle:LENGth
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.CorrectionTable_.Length.Length
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Description
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:OPTion:DESCription
+
+.. code-block:: python
+
+	SYSTem:BASE:OPTion:DESCription
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Option_.Description.Description
+	:members:
+	:undoc-members:
+	:noindex:

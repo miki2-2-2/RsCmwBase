@@ -1,0 +1,41 @@
+Spoint
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SPOint:CATalog
+	single: CONFigure:SPOint:UNDefine
+
+.. code-block:: python
+
+	CONFigure:SPOint:CATalog
+	CONFigure:SPOint:UNDefine
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Spoint.Spoint
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.spoint.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Configure_Spoint_Define.rst
+	Configure_Spoint_Rewait.rst
+	Configure_Spoint_Join.rst

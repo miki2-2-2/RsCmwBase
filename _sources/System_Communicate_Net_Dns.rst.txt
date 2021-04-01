@@ -1,0 +1,22 @@
+Dns
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:NET:DNS:ENABle
+	single: SYSTem:COMMunicate:NET:DNS
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:NET:DNS:ENABle
+	SYSTem:COMMunicate:NET:DNS
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Net_.Dns.Dns
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+SingleCmw
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:CMWS:LEDTest
+
+.. code-block:: python
+
+	DIAGnostic:CMWS:LEDTest
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.SingleCmw.SingleCmw
+	:members:
+	:undoc-members:
+	:noindex:

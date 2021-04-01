@@ -1,0 +1,20 @@
+Source
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRIGger:BASE:EOUT<Eout>:CATalog:SOURce
+
+.. code-block:: python
+
+	TRIGger:BASE:EOUT<Eout>:CATalog:SOURce
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trigger_.Eout_.Catalog_.Source.Source
+	:members:
+	:undoc-members:
+	:noindex:

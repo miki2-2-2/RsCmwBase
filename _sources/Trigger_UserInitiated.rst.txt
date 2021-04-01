@@ -1,0 +1,36 @@
+UserInitiated<Trigger>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Trg1 .. Trg4
+	rc = driver.trigger.userInitiated.repcap_trigger_get()
+	driver.trigger.userInitiated.repcap_trigger_set(repcap.Trigger.Trg1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trigger_.UserInitiated.UserInitiated
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trigger.userInitiated.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trigger_UserInitiated_Execute.rst

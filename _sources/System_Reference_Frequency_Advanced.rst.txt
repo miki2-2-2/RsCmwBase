@@ -1,0 +1,28 @@
+Advanced
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Reference_.Frequency_.Advanced.Advanced
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.reference.frequency.advanced.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Reference_Frequency_Advanced_Source.rst

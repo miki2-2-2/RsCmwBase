@@ -1,0 +1,41 @@
+Ipc
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INITiate:BASE:IPC
+	single: ABORt:BASE:IPC
+	single: FETCh:BASE:IPC
+
+.. code-block:: python
+
+	INITiate:BASE:IPC
+	ABORt:BASE:IPC
+	FETCh:BASE:IPC
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Ipc.Ipc
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.ipc.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Ipc_Result.rst

@@ -1,0 +1,20 @@
+Parser
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: TRACe:REMote:MODE:FILE<FileNr>:PARSer
+
+.. code-block:: python
+
+	TRACe:REMote:MODE:FILE<FileNr>:PARSer
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.Parser.Parser
+	:members:
+	:undoc-members:
+	:noindex:

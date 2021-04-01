@@ -1,0 +1,24 @@
+Snode
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe:BASE:IPSet:SNODe:NNAMe
+	single: SENSe:BASE:IPSet:SNODe:NTYPe
+	single: SENSe:BASE:IPSet:SNODe:NSEGment
+
+.. code-block:: python
+
+	SENSe:BASE:IPSet:SNODe:NNAMe
+	SENSe:BASE:IPSet:SNODe:NTYPe
+	SENSe:BASE:IPSet:SNODe:NSEGment
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense_.IpSubnet_.Snode.Snode
+	:members:
+	:undoc-members:
+	:noindex:

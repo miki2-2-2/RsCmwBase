@@ -1,0 +1,20 @@
+Update
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:UPDate:DGRoup
+
+.. code-block:: python
+
+	SYSTem:UPDate:DGRoup
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Update.Update
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+RxFilter
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:BASE:CORRection:IFEQualizer:SLOT<Slot>:RXFilter
+
+.. code-block:: python
+
+	FETCh:BASE:CORRection:IFEQualizer:SLOT<Slot>:RXFilter
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Correction_.IfEqualizer_.Slot_.RxFilter.RxFilter
+	:members:
+	:undoc-members:
+	:noindex:

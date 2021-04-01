@@ -1,0 +1,20 @@
+Refresh
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:IPSet:SMONitor:REFResh
+
+.. code-block:: python
+
+	SYSTem:BASE:IPSet:SMONitor:REFResh
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.IpSubnet_.SubMonitor_.Refresh.Refresh
+	:members:
+	:undoc-members:
+	:noindex:

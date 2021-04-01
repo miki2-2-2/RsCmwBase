@@ -1,0 +1,20 @@
+Translation
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:CONNector:TRANslation
+
+.. code-block:: python
+
+	SYSTem:CONNector:TRANslation
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Connector_.Translation.Translation
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+SdReached
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:MEASurement:CONDition:SDReached
+
+.. code-block:: python
+
+	STATus:MEASurement:CONDition:SDReached
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Measurement_.Condition_.SdReached.SdReached
+	:members:
+	:undoc-members:
+	:noindex:

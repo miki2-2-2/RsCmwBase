@@ -1,0 +1,29 @@
+Access
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Access.Access
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.access.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Access_Restore.rst
+	Diagnostic_Access_Scenario.rst

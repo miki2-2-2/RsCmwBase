@@ -1,0 +1,20 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:FOOTprint:ELEMent:DATA
+
+.. code-block:: python
+
+	DIAGnostic:FOOTprint:ELEMent:DATA
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.FootPrint_.Element_.Data.Data
+	:members:
+	:undoc-members:
+	:noindex:

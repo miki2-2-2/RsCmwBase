@@ -1,0 +1,36 @@
+IpAddress<IpAddress>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Addr1 .. Addr3
+	rc = driver.configure.mmonitor.ipAddress.repcap_ipAddress_get()
+	driver.configure.mmonitor.ipAddress.repcap_ipAddress_set(repcap.IpAddress.Addr1)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:MMONitor:IPADdress<IpAddress>
+
+.. code-block:: python
+
+	CONFigure:BASE:MMONitor:IPADdress<IpAddress>
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Mmonitor_.IpAddress.IpAddress
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.configure.mmonitor.ipAddress.clone()

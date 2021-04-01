@@ -1,0 +1,20 @@
+Restore
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:ACCess:RESTore
+
+.. code-block:: python
+
+	DIAGnostic:ACCess:RESTore
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Access_.Restore.Restore
+	:members:
+	:undoc-members:
+	:noindex:

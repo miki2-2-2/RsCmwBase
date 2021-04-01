@@ -1,0 +1,24 @@
+Ipcr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CALibration:BASE:IPCR:DATE
+	single: CALibration:BASE:IPCR:STATe
+	single: CALibration:BASE:IPCR:RESult
+
+.. code-block:: python
+
+	CALibration:BASE:IPCR:DATE
+	CALibration:BASE:IPCR:STATe
+	CALibration:BASE:IPCR:RESult
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Calibration_.Ipcr.Ipcr
+	:members:
+	:undoc-members:
+	:noindex:

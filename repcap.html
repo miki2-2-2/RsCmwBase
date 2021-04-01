@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RepCaps &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="RsCmwBase API Structure" href="RsCmwBase.html" />
+    <link rel="prev" title="Enums" href="enums.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RepCaps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bitnr">BitNr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cmwvariant">CmwVariant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eout">Eout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filenr">FileNr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frequency">Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gpibinstance">GpibInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hislipinstance">HislipInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ipaddress">IpAddress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nwadapter">NwAdapter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rsibinstance">RsibInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rxfilter">RxFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slot">Slot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#socketinstance">SocketInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#trigger">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#txfilter">TxFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vxiinstance">VxiInstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#window">Window</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>RepCaps</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/repcap.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="repcaps">
+<h1>RepCaps<a class="headerlink" href="#repcaps" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bitnr">
+<h2>BitNr<a class="headerlink" href="#bitnr" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">BitNr</span><span class="o">.</span><span class="n">Nr8</span>
+<span class="c1"># Range:</span>
+<span class="n">Nr8</span> <span class="o">..</span> <span class="n">Nr12</span>
+<span class="c1"># All values (5x):</span>
+<span class="n">Nr8</span> <span class="o">|</span> <span class="n">Nr9</span> <span class="o">|</span> <span class="n">Nr10</span> <span class="o">|</span> <span class="n">Nr11</span> <span class="o">|</span> <span class="n">Nr12</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cmwvariant">
+<h2>CmwVariant<a class="headerlink" href="#cmwvariant" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">CmwVariant</span><span class="o">.</span><span class="n">Cmw1</span>
+<span class="c1"># Values (2x):</span>
+<span class="n">Cmw1</span> <span class="o">|</span> <span class="n">Cmw100</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="eout">
+<h2>Eout<a class="headerlink" href="#eout" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">Eout</span><span class="o">.</span><span class="n">Eout1</span>
+<span class="c1"># Values (4x):</span>
+<span class="n">Eout1</span> <span class="o">|</span> <span class="n">Eout2</span> <span class="o">|</span> <span class="n">Eout3</span> <span class="o">|</span> <span class="n">Eout4</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="filenr">
+<h2>FileNr<a class="headerlink" href="#filenr" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">FileNr</span><span class="o">.</span><span class="n">Nr1</span>
+<span class="c1"># Values (2x):</span>
+<span class="n">Nr1</span> <span class="o">|</span> <span class="n">Nr2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="frequency">
+<h2>Frequency<a class="headerlink" href="#frequency" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">Frequency</span><span class="o">.</span><span class="n">Freq1</span>
+<span class="c1"># Values (4x):</span>
+<span class="n">Freq1</span> <span class="o">|</span> <span class="n">Freq2</span> <span class="o">|</span> <span class="n">Freq3</span> <span class="o">|</span> <span class="n">Freq4</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gpibinstance">
+<h2>GpibInstance<a class="headerlink" href="#gpibinstance" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">GpibInstance</span><span class="o">.</span><span class="n">Inst1</span>
+<span class="c1"># Range:</span>
+<span class="n">Inst1</span> <span class="o">..</span> <span class="n">Inst32</span>
+<span class="c1"># All values (32x):</span>
+<span class="n">Inst1</span> <span class="o">|</span> <span class="n">Inst2</span> <span class="o">|</span> <span class="n">Inst3</span> <span class="o">|</span> <span class="n">Inst4</span> <span class="o">|</span> <span class="n">Inst5</span> <span class="o">|</span> <span class="n">Inst6</span> <span class="o">|</span> <span class="n">Inst7</span> <span class="o">|</span> <span class="n">Inst8</span>
+<span class="n">Inst9</span> <span class="o">|</span> <span class="n">Inst10</span> <span class="o">|</span> <span class="n">Inst11</span> <span class="o">|</span> <span class="n">Inst12</span> <span class="o">|</span> <span class="n">Inst13</span> <span class="o">|</span> <span class="n">Inst14</span> <span class="o">|</span> <span class="n">Inst15</span> <span class="o">|</span> <span class="n">Inst16</span>
+<span class="n">Inst17</span> <span class="o">|</span> <span class="n">Inst18</span> <span class="o">|</span> <span class="n">Inst19</span> <span class="o">|</span> <span class="n">Inst20</span> <span class="o">|</span> <span class="n">Inst21</span> <span class="o">|</span> <span class="n">Inst22</span> <span class="o">|</span> <span class="n">Inst23</span> <span class="o">|</span> <span class="n">Inst24</span>
+<span class="n">Inst25</span> <span class="o">|</span> <span class="n">Inst26</span> <span class="o">|</span> <span class="n">Inst27</span> <span class="o">|</span> <span class="n">Inst28</span> <span class="o">|</span> <span class="n">Inst29</span> <span class="o">|</span> <span class="n">Inst30</span> <span class="o">|</span> <span class="n">Inst31</span> <span class="o">|</span> <span class="n">Inst32</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="hislipinstance">
+<h2>HislipInstance<a class="headerlink" href="#hislipinstance" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">HislipInstance</span><span class="o">.</span><span class="n">Inst1</span>
+<span class="c1"># Range:</span>
+<span class="n">Inst1</span> <span class="o">..</span> <span class="n">Inst32</span>
+<span class="c1"># All values (32x):</span>
+<span class="n">Inst1</span> <span class="o">|</span> <span class="n">Inst2</span> <span class="o">|</span> <span class="n">Inst3</span> <span class="o">|</span> <span class="n">Inst4</span> <span class="o">|</span> <span class="n">Inst5</span> <span class="o">|</span> <span class="n">Inst6</span> <span class="o">|</span> <span class="n">Inst7</span> <span class="o">|</span> <span class="n">Inst8</span>
+<span class="n">Inst9</span> <span class="o">|</span> <span class="n">Inst10</span> <span class="o">|</span> <span class="n">Inst11</span> <span class="o">|</span> <span class="n">Inst12</span> <span class="o">|</span> <span class="n">Inst13</span> <span class="o">|</span> <span class="n">Inst14</span> <span class="o">|</span> <span class="n">Inst15</span> <span class="o">|</span> <span class="n">Inst16</span>
+<span class="n">Inst17</span> <span class="o">|</span> <span class="n">Inst18</span> <span class="o">|</span> <span class="n">Inst19</span> <span class="o">|</span> <span class="n">Inst20</span> <span class="o">|</span> <span class="n">Inst21</span> <span class="o">|</span> <span class="n">Inst22</span> <span class="o">|</span> <span class="n">Inst23</span> <span class="o">|</span> <span class="n">Inst24</span>
+<span class="n">Inst25</span> <span class="o">|</span> <span class="n">Inst26</span> <span class="o">|</span> <span class="n">Inst27</span> <span class="o">|</span> <span class="n">Inst28</span> <span class="o">|</span> <span class="n">Inst29</span> <span class="o">|</span> <span class="n">Inst30</span> <span class="o">|</span> <span class="n">Inst31</span> <span class="o">|</span> <span class="n">Inst32</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ipaddress">
+<h2>IpAddress<a class="headerlink" href="#ipaddress" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">IpAddress</span><span class="o">.</span><span class="n">Addr1</span>
+<span class="c1"># Values (3x):</span>
+<span class="n">Addr1</span> <span class="o">|</span> <span class="n">Addr2</span> <span class="o">|</span> <span class="n">Addr3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="nwadapter">
+<h2>NwAdapter<a class="headerlink" href="#nwadapter" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">NwAdapter</span><span class="o">.</span><span class="n">Adapter1</span>
+<span class="c1"># Range:</span>
+<span class="n">Adapter1</span> <span class="o">..</span> <span class="n">Adapter5</span>
+<span class="c1"># All values (5x):</span>
+<span class="n">Adapter1</span> <span class="o">|</span> <span class="n">Adapter2</span> <span class="o">|</span> <span class="n">Adapter3</span> <span class="o">|</span> <span class="n">Adapter4</span> <span class="o">|</span> <span class="n">Adapter5</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rsibinstance">
+<h2>RsibInstance<a class="headerlink" href="#rsibinstance" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">RsibInstance</span><span class="o">.</span><span class="n">Inst1</span>
+<span class="c1"># Range:</span>
+<span class="n">Inst1</span> <span class="o">..</span> <span class="n">Inst32</span>
+<span class="c1"># All values (32x):</span>
+<span class="n">Inst1</span> <span class="o">|</span> <span class="n">Inst2</span> <span class="o">|</span> <span class="n">Inst3</span> <span class="o">|</span> <span class="n">Inst4</span> <span class="o">|</span> <span class="n">Inst5</span> <span class="o">|</span> <span class="n">Inst6</span> <span class="o">|</span> <span class="n">Inst7</span> <span class="o">|</span> <span class="n">Inst8</span>
+<span class="n">Inst9</span> <span class="o">|</span> <span class="n">Inst10</span> <span class="o">|</span> <span class="n">Inst11</span> <span class="o">|</span> <span class="n">Inst12</span> <span class="o">|</span> <span class="n">Inst13</span> <span class="o">|</span> <span class="n">Inst14</span> <span class="o">|</span> <span class="n">Inst15</span> <span class="o">|</span> <span class="n">Inst16</span>
+<span class="n">Inst17</span> <span class="o">|</span> <span class="n">Inst18</span> <span class="o">|</span> <span class="n">Inst19</span> <span class="o">|</span> <span class="n">Inst20</span> <span class="o">|</span> <span class="n">Inst21</span> <span class="o">|</span> <span class="n">Inst22</span> <span class="o">|</span> <span class="n">Inst23</span> <span class="o">|</span> <span class="n">Inst24</span>
+<span class="n">Inst25</span> <span class="o">|</span> <span class="n">Inst26</span> <span class="o">|</span> <span class="n">Inst27</span> <span class="o">|</span> <span class="n">Inst28</span> <span class="o">|</span> <span class="n">Inst29</span> <span class="o">|</span> <span class="n">Inst30</span> <span class="o">|</span> <span class="n">Inst31</span> <span class="o">|</span> <span class="n">Inst32</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rxfilter">
+<h2>RxFilter<a class="headerlink" href="#rxfilter" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">RxFilter</span><span class="o">.</span><span class="n">Nr1</span>
+<span class="c1"># Range:</span>
+<span class="n">Nr1</span> <span class="o">..</span> <span class="n">Nr10</span>
+<span class="c1"># All values (10x):</span>
+<span class="n">Nr1</span> <span class="o">|</span> <span class="n">Nr2</span> <span class="o">|</span> <span class="n">Nr3</span> <span class="o">|</span> <span class="n">Nr4</span> <span class="o">|</span> <span class="n">Nr5</span> <span class="o">|</span> <span class="n">Nr6</span> <span class="o">|</span> <span class="n">Nr7</span> <span class="o">|</span> <span class="n">Nr8</span>
+<span class="n">Nr9</span> <span class="o">|</span> <span class="n">Nr10</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="slot">
+<h2>Slot<a class="headerlink" href="#slot" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">Slot</span><span class="o">.</span><span class="n">Nr1</span>
+<span class="c1"># Values (4x):</span>
+<span class="n">Nr1</span> <span class="o">|</span> <span class="n">Nr2</span> <span class="o">|</span> <span class="n">Nr3</span> <span class="o">|</span> <span class="n">Nr4</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="socketinstance">
+<h2>SocketInstance<a class="headerlink" href="#socketinstance" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">SocketInstance</span><span class="o">.</span><span class="n">Inst1</span>
+<span class="c1"># Range:</span>
+<span class="n">Inst1</span> <span class="o">..</span> <span class="n">Inst32</span>
+<span class="c1"># All values (32x):</span>
+<span class="n">Inst1</span> <span class="o">|</span> <span class="n">Inst2</span> <span class="o">|</span> <span class="n">Inst3</span> <span class="o">|</span> <span class="n">Inst4</span> <span class="o">|</span> <span class="n">Inst5</span> <span class="o">|</span> <span class="n">Inst6</span> <span class="o">|</span> <span class="n">Inst7</span> <span class="o">|</span> <span class="n">Inst8</span>
+<span class="n">Inst9</span> <span class="o">|</span> <span class="n">Inst10</span> <span class="o">|</span> <span class="n">Inst11</span> <span class="o">|</span> <span class="n">Inst12</span> <span class="o">|</span> <span class="n">Inst13</span> <span class="o">|</span> <span class="n">Inst14</span> <span class="o">|</span> <span class="n">Inst15</span> <span class="o">|</span> <span class="n">Inst16</span>
+<span class="n">Inst17</span> <span class="o">|</span> <span class="n">Inst18</span> <span class="o">|</span> <span class="n">Inst19</span> <span class="o">|</span> <span class="n">Inst20</span> <span class="o">|</span> <span class="n">Inst21</span> <span class="o">|</span> <span class="n">Inst22</span> <span class="o">|</span> <span class="n">Inst23</span> <span class="o">|</span> <span class="n">Inst24</span>
+<span class="n">Inst25</span> <span class="o">|</span> <span class="n">Inst26</span> <span class="o">|</span> <span class="n">Inst27</span> <span class="o">|</span> <span class="n">Inst28</span> <span class="o">|</span> <span class="n">Inst29</span> <span class="o">|</span> <span class="n">Inst30</span> <span class="o">|</span> <span class="n">Inst31</span> <span class="o">|</span> <span class="n">Inst32</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="trigger">
+<h2>Trigger<a class="headerlink" href="#trigger" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">Trigger</span><span class="o">.</span><span class="n">Trg1</span>
+<span class="c1"># Values (4x):</span>
+<span class="n">Trg1</span> <span class="o">|</span> <span class="n">Trg2</span> <span class="o">|</span> <span class="n">Trg3</span> <span class="o">|</span> <span class="n">Trg4</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="txfilter">
+<h2>TxFilter<a class="headerlink" href="#txfilter" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">TxFilter</span><span class="o">.</span><span class="n">Nr1</span>
+<span class="c1"># Range:</span>
+<span class="n">Nr1</span> <span class="o">..</span> <span class="n">Nr10</span>
+<span class="c1"># All values (10x):</span>
+<span class="n">Nr1</span> <span class="o">|</span> <span class="n">Nr2</span> <span class="o">|</span> <span class="n">Nr3</span> <span class="o">|</span> <span class="n">Nr4</span> <span class="o">|</span> <span class="n">Nr5</span> <span class="o">|</span> <span class="n">Nr6</span> <span class="o">|</span> <span class="n">Nr7</span> <span class="o">|</span> <span class="n">Nr8</span>
+<span class="n">Nr9</span> <span class="o">|</span> <span class="n">Nr10</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vxiinstance">
+<h2>VxiInstance<a class="headerlink" href="#vxiinstance" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">VxiInstance</span><span class="o">.</span><span class="n">Inst1</span>
+<span class="c1"># Range:</span>
+<span class="n">Inst1</span> <span class="o">..</span> <span class="n">Inst32</span>
+<span class="c1"># All values (32x):</span>
+<span class="n">Inst1</span> <span class="o">|</span> <span class="n">Inst2</span> <span class="o">|</span> <span class="n">Inst3</span> <span class="o">|</span> <span class="n">Inst4</span> <span class="o">|</span> <span class="n">Inst5</span> <span class="o">|</span> <span class="n">Inst6</span> <span class="o">|</span> <span class="n">Inst7</span> <span class="o">|</span> <span class="n">Inst8</span>
+<span class="n">Inst9</span> <span class="o">|</span> <span class="n">Inst10</span> <span class="o">|</span> <span class="n">Inst11</span> <span class="o">|</span> <span class="n">Inst12</span> <span class="o">|</span> <span class="n">Inst13</span> <span class="o">|</span> <span class="n">Inst14</span> <span class="o">|</span> <span class="n">Inst15</span> <span class="o">|</span> <span class="n">Inst16</span>
+<span class="n">Inst17</span> <span class="o">|</span> <span class="n">Inst18</span> <span class="o">|</span> <span class="n">Inst19</span> <span class="o">|</span> <span class="n">Inst20</span> <span class="o">|</span> <span class="n">Inst21</span> <span class="o">|</span> <span class="n">Inst22</span> <span class="o">|</span> <span class="n">Inst23</span> <span class="o">|</span> <span class="n">Inst24</span>
+<span class="n">Inst25</span> <span class="o">|</span> <span class="n">Inst26</span> <span class="o">|</span> <span class="n">Inst27</span> <span class="o">|</span> <span class="n">Inst28</span> <span class="o">|</span> <span class="n">Inst29</span> <span class="o">|</span> <span class="n">Inst30</span> <span class="o">|</span> <span class="n">Inst31</span> <span class="o">|</span> <span class="n">Inst32</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="window">
+<h2>Window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># First value:</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">repcap</span><span class="o">.</span><span class="n">Window</span><span class="o">.</span><span class="n">Win1</span>
+<span class="c1"># Range:</span>
+<span class="n">Win1</span> <span class="o">..</span> <span class="n">Win32</span>
+<span class="c1"># All values (32x):</span>
+<span class="n">Win1</span> <span class="o">|</span> <span class="n">Win2</span> <span class="o">|</span> <span class="n">Win3</span> <span class="o">|</span> <span class="n">Win4</span> <span class="o">|</span> <span class="n">Win5</span> <span class="o">|</span> <span class="n">Win6</span> <span class="o">|</span> <span class="n">Win7</span> <span class="o">|</span> <span class="n">Win8</span>
+<span class="n">Win9</span> <span class="o">|</span> <span class="n">Win10</span> <span class="o">|</span> <span class="n">Win11</span> <span class="o">|</span> <span class="n">Win12</span> <span class="o">|</span> <span class="n">Win13</span> <span class="o">|</span> <span class="n">Win14</span> <span class="o">|</span> <span class="n">Win15</span> <span class="o">|</span> <span class="n">Win16</span>
+<span class="n">Win17</span> <span class="o">|</span> <span class="n">Win18</span> <span class="o">|</span> <span class="n">Win19</span> <span class="o">|</span> <span class="n">Win20</span> <span class="o">|</span> <span class="n">Win21</span> <span class="o">|</span> <span class="n">Win22</span> <span class="o">|</span> <span class="n">Win23</span> <span class="o">|</span> <span class="n">Win24</span>
+<span class="n">Win25</span> <span class="o">|</span> <span class="n">Win26</span> <span class="o">|</span> <span class="n">Win27</span> <span class="o">|</span> <span class="n">Win28</span> <span class="o">|</span> <span class="n">Win29</span> <span class="o">|</span> <span class="n">Win30</span> <span class="o">|</span> <span class="n">Win31</span> <span class="o">|</span> <span class="n">Win32</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="RsCmwBase.html" class="btn btn-neutral float-right" title="RsCmwBase API Structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="enums.html" class="btn btn-neutral float-left" title="Enums" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

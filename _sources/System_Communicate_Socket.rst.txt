@@ -1,0 +1,38 @@
+Socket<SocketInstance>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Inst1 .. Inst32
+	rc = driver.system.communicate.socket.repcap_socketInstance_get()
+	driver.system.communicate.socket.repcap_socketInstance_set(repcap.SocketInstance.Inst1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Socket.Socket
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.socket.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Socket_Vresource.rst
+	System_Communicate_Socket_Mode.rst
+	System_Communicate_Socket_Port.rst

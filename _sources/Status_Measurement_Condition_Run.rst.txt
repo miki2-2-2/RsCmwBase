@@ -1,0 +1,20 @@
+Run
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:MEASurement:CONDition:RUN
+
+.. code-block:: python
+
+	STATus:MEASurement:CONDition:RUN
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Measurement_.Condition_.Run.Run
+	:members:
+	:undoc-members:
+	:noindex:

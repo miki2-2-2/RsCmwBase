@@ -1,0 +1,22 @@
+File
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:RECord:MACRo:FILE:STARt
+	single: SYSTem:RECord:MACRo:FILE:STOP
+
+.. code-block:: python
+
+	SYSTem:RECord:MACRo:FILE:STARt
+	SYSTem:RECord:MACRo:FILE:STOP
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Record_.Macro_.File.File
+	:members:
+	:undoc-members:
+	:noindex:

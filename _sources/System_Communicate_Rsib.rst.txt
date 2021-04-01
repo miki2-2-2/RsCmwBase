@@ -1,0 +1,36 @@
+Rsib<RsibInstance>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Inst1 .. Inst32
+	rc = driver.system.communicate.rsib.repcap_rsibInstance_get()
+	driver.system.communicate.rsib.repcap_rsibInstance_set(repcap.RsibInstance.Inst1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Rsib.Rsib
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.rsib.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Rsib_Vresource.rst

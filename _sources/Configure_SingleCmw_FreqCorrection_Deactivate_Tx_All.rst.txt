@@ -1,0 +1,20 @@
+All
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:CMWS:FDCorrection:DEACtivate:TX:ALL
+
+.. code-block:: python
+
+	CONFigure:CMWS:FDCorrection:DEACtivate:TX:ALL
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.SingleCmw_.FreqCorrection_.Deactivate_.Tx_.All.All
+	:members:
+	:undoc-members:
+	:noindex:

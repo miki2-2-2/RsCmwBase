@@ -1,0 +1,20 @@
+Activate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:FDCorrection:ACTivate
+
+.. code-block:: python
+
+	CONFigure:FDCorrection:ACTivate
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.Activate.Activate
+	:members:
+	:undoc-members:
+	:noindex:

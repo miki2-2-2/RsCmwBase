@@ -1,0 +1,29 @@
+Gdelay
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Correction_.IfEqualizer_.Trace_.Gdelay.Gdelay
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.correction.ifEqualizer.trace.gdelay.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Correction_IfEqualizer_Trace_Gdelay_Corrected.rst
+	Correction_IfEqualizer_Trace_Gdelay_Uncorrected.rst

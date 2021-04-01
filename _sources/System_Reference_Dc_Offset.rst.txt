@@ -1,0 +1,20 @@
+Offset
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:REFerence:DC:OFFSet:ENABle
+
+.. code-block:: python
+
+	SYSTem:BASE:REFerence:DC:OFFSet:ENABle
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Reference_.Dc_.Offset.Offset
+	:members:
+	:undoc-members:
+	:noindex:

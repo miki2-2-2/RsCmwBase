@@ -1,0 +1,22 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INSTrument:SELect:DSTRategy
+	single: INSTrument:SELect
+
+.. code-block:: python
+
+	INSTrument:SELect:DSTRategy
+	INSTrument:SELect
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Instrument_.Select.Select
+	:members:
+	:undoc-members:
+	:noindex:

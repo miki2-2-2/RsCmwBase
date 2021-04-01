@@ -1,0 +1,20 @@
+Subnet
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:NET:SUBNet:MASK
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:NET:SUBNet:MASK
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Net_.Subnet.Subnet
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Select
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DISPlay:WINDow<Window>:SELect
+
+.. code-block:: python
+
+	DISPlay:WINDow<Window>:SELect
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Display_.Window_.Select.Select
+	:members:
+	:undoc-members:
+	:noindex:

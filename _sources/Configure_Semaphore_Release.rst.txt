@@ -1,0 +1,20 @@
+Release
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SEMaphore:RELease
+
+.. code-block:: python
+
+	CONFigure:SEMaphore:RELease
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Semaphore_.Release.Release
+	:members:
+	:undoc-members:
+	:noindex:

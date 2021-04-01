@@ -1,0 +1,37 @@
+Slot<Slot>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr4
+	rc = driver.correction.ifEqualizer.slot.repcap_slot_get()
+	driver.correction.ifEqualizer.slot.repcap_slot_set(repcap.Slot.Nr1)
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Correction_.IfEqualizer_.Slot.Slot
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.correction.ifEqualizer.slot.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Correction_IfEqualizer_Slot_RxFilter.rst
+	Correction_IfEqualizer_Slot_TxFilter.rst

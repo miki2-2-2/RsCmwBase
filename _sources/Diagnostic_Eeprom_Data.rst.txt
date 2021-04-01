@@ -1,0 +1,20 @@
+Data
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:EEPRom:DATA
+
+.. code-block:: python
+
+	DIAGnostic:EEPRom:DATA
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Eeprom_.Data.Data
+	:members:
+	:undoc-members:
+	:noindex:

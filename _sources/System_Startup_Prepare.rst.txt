@@ -1,0 +1,20 @@
+Prepare
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:STARtup:PREPare:FDEFault
+
+.. code-block:: python
+
+	SYSTem:STARtup:PREPare:FDEFault
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Startup_.Prepare.Prepare
+	:members:
+	:undoc-members:
+	:noindex:

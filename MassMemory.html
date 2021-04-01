@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MassMemory &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Load" href="MassMemory_Load.html" />
+    <link rel="prev" title="RecallState" href="RecallState.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Configure.html">Configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiCmw.html">MultiCmw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ipc.html">Ipc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cmwd.html">Cmwd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Procedure.html">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Get.html">Get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Correction.html">Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Catalog.html">Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Write.html">Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirmwareUpdate.html">FirmwareUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MacroCreate.html">MacroCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TriggerInvoke.html">TriggerInvoke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalWait.html">GlobalWait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalClearStatus.html">GlobalClearStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoToLocal.html">GoToLocal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Buffer.html">Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SaveState.html">SaveState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecallState.html">RecallState</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MassMemory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Load.html">Load</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Store.html">Store</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Attribute.html">Attribute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Catalog.html">Catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_CurrentDirectory.html">CurrentDirectory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MassMemory_Dcatalog.html">Dcatalog</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="RsCmwBase.html">RsCmwBase API Structure</a> &raquo;</li>
+        
+      <li>MassMemory</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/MassMemory.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="massmemory">
+<h1>MassMemory<a class="headerlink" href="#massmemory" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">SCPI Commands</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">MMEMory</span><span class="p">:</span><span class="n">COPY</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">DELete</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">DRIVes</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">MDIRectory</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">MOVE</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">MSIS</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">RDIRectory</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">SAV</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">RCL</span>
+<span class="n">MMEMory</span><span class="p">:</span><span class="n">ALIases</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">MassMemory</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>MassMemory commands group definition. 22 total commands, 6 Sub-groups, 10 group commands</p>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">AliasesStruct</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.AliasesStruct"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Structure for reading output parameters. Fields:</p>
+<ul class="simple">
+<li><p>Alias: List[str]: No parameter help available</p></li>
+<li><p>Path: List[str]: No parameter help available</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_source</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">file_destination</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.copy"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:COPY</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">file_source</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">file_destination</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Copies an existing file. The target directory must exist.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param file_source</dt>
+<dd class="field-odd"><p>String parameter to specify the name of the file to be copied. Wildcards ? and * are allowed if FileDestination contains a path without filename.</p>
+</dd>
+<dt class="field-even">param file_destination</dt>
+<dd class="field-even"><p>String parameter to specify the path and/or name of the new file. If no file destination is specified, the source file is written to the current directory (see method RsCmwBase.MassMemory.CurrentDirectory.set) . Wildcards are not allowed.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.delete"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:DELete</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Deletes the specified files.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param file_name</dt>
+<dd class="field-odd"><p>String parameter specifying the file to be deleted. The wildcards * and ? are allowed. Specifying a directory instead of a file is not allowed.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">delete_directory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory_name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.delete_directory"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:RDIRectory</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">delete_directory</span><span class="p">(</span><span class="n">directory_name</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Removes an existing empty directory from the mass memory storage system.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param directory_name</dt>
+<dd class="field-odd"><p>String parameter to specify the directory. Wildcards are not allowed.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_aliases</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; AliasesStruct<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.get_aliases"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:ALIases</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">AliasesStruct</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">get_aliases</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Returns the defined alias entries and the assigned directories. These settings are predefined and cannot be configured.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>structure: for return value, see the help for AliasesStruct structure arguments.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_drives</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.get_drives"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:DRIVes</span>
+<span class="n">value</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">get_drives</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Returns a list of the available drives.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>drive: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">get_store_unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.get_store_unit"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:MSIS</span>
+<span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">get_store_unit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Changes the default storage unit (drive or server) for mass memory storage. When the default storage unit is changed, it
+is checked whether the current directory (see method RsCmwBase.MassMemory.CurrentDirectory.set) is also available on the
+new storage unit. If not, the current directory is automatically set to ‘/’.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">return</dt>
+<dd class="field-odd"><p>msus: No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">make_directory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory_name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.make_directory"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:MDIRectory</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">make_directory</span><span class="p">(</span><span class="n">directory_name</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Creates a directory. If necessary, an entire path consisting of several subdirectories is created.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param directory_name</dt>
+<dd class="field-odd"><p>String parameter to specify the directory. Wildcards are not allowed.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_source</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">file_destination</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.move"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:MOVE</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">file_source</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">file_destination</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Moves or renames an existing object (file or directory) to a new location.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param file_source</dt>
+<dd class="field-odd"><p>String parameter to specify the name of the object to be moved or renamed. Wildcards ? and * are only allowed for moving files without renaming.</p>
+</dd>
+<dt class="field-even">param file_destination</dt>
+<dd class="field-even"><p>String parameter to specify the new name and/or path of the object. Wildcards are not allowed. If a new object name without path is specified, the object is renamed. If a new path without object name is specified, the object is moved to this path. If a new path and a new object name are specified, the object is moved to this path and renamed.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">recall</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">msus</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.recall"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:RCL</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">recall</span><span class="p">(</span><span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">msus</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Restores the instrument settings from the specified file. This command has the same effect as the combination of method
+RsCmwBase.MassMemory.Load.State.set and <a href="#id1"><span class="problematic" id="id2">*</span></a>RCL.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param file_name</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+<dt class="field-even">param msus</dt>
+<dd class="field-even"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">msus</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.save"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:SAV</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">msus</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Stores the current instrument settings to the specified file. This command has the same effect as the combination of <a href="#id3"><span class="problematic" id="id4">*</span></a>SAV
+and method RsCmwBase.MassMemory.Store.State.set.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param file_name</dt>
+<dd class="field-odd"><p>No help available</p>
+</dd>
+<dt class="field-even">param msus</dt>
+<dd class="field-even"><p>No help available</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_store_unit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msus</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/MassMemory.html#MassMemory.set_store_unit"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: MMEMory:MSIS</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">set_store_unit</span><span class="p">(</span><span class="n">msus</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Changes the default storage unit (drive or server) for mass memory storage. When the default storage unit is changed, it
+is checked whether the current directory (see method RsCmwBase.MassMemory.CurrentDirectory.set) is also available on the
+new storage unit. If not, the current directory is automatically set to ‘/’.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param msus</dt>
+<dd class="field-odd"><p>String parameter to specify the default storage unit.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<p class="rubric">Cloning the Group</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a clone of the original group, that exists independently</span>
+<span class="n">group2</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">massMemory</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="rubric">Subgroups</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="MassMemory_Load.html">Load</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Load_Macro.html">Macro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Load_State.html">State</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Load_Item.html">Item</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MassMemory_Store.html">Store</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Store_Macro.html">Macro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Store_State.html">State</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Store_Item.html">Item</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MassMemory_Attribute.html">Attribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MassMemory_Catalog.html">Catalog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Catalog_Length.html">Length</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="MassMemory_CurrentDirectory.html">CurrentDirectory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MassMemory_Dcatalog.html">Dcatalog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory_Dcatalog_Length.html">Length</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="MassMemory_Load.html" class="btn btn-neutral float-right" title="Load" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="RecallState.html" class="btn btn-neutral float-left" title="RecallState" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

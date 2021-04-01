@@ -1,0 +1,41 @@
+Rlogging
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:COMPass:DBASe:RLOGging:MODE
+	single: DIAGnostic:COMPass:DBASe:RLOGging:DEVice
+	single: DIAGnostic:COMPass:DBASe:RLOGging:CLEar
+
+.. code-block:: python
+
+	DIAGnostic:COMPass:DBASe:RLOGging:MODE
+	DIAGnostic:COMPass:DBASe:RLOGging:DEVice
+	DIAGnostic:COMPass:DBASe:RLOGging:CLEar
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Compass_.Dbase_.Rlogging.Rlogging
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.compass.dbase.rlogging.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Compass_Dbase_Rlogging_Protocol.rst

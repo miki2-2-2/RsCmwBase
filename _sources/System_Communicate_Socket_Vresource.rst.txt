@@ -1,0 +1,20 @@
+Vresource
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:SOCKet<SocketInstance>:VRESource
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:SOCKet<SocketInstance>:VRESource
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Socket_.Vresource.Vresource
+	:members:
+	:undoc-members:
+	:noindex:

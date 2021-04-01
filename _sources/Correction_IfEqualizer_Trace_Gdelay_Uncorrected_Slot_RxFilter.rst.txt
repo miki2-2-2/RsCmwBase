@@ -1,0 +1,36 @@
+RxFilter<RxFilter>
+----------------------------------------
+
+.. rubric:: RepCap Settings
+
+.. code-block:: python
+
+	# Range: Nr1 .. Nr10
+	rc = driver.correction.ifEqualizer.trace.gdelay.uncorrected.slot.rxFilter.repcap_rxFilter_get()
+	driver.correction.ifEqualizer.trace.gdelay.uncorrected.slot.rxFilter.repcap_rxFilter_set(repcap.RxFilter.Nr1)
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:BASE:CORRection:IFEQualizer:TRACe:GDELay:UNCorrected:SLOT<Slot>:RXFilter<RxFilter>
+
+.. code-block:: python
+
+	FETCh:BASE:CORRection:IFEQualizer:TRACe:GDELay:UNCorrected:SLOT<Slot>:RXFilter<RxFilter>
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Correction_.IfEqualizer_.Trace_.Gdelay_.Uncorrected_.Slot_.RxFilter.RxFilter
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.correction.ifEqualizer.trace.gdelay.uncorrected.slot.rxFilter.clone()

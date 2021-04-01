@@ -1,0 +1,29 @@
+LedTest
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Cmw_.LedTest.LedTest
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.cmw.ledTest.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_Cmw_LedTest_Tx.rst
+	Diagnostic_Cmw_LedTest_Rx.rst

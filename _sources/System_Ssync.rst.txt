@@ -1,0 +1,22 @@
+Ssync
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:SSYNc:MODE
+	single: SYSTem:BASE:SSYNc:OFFSet
+
+.. code-block:: python
+
+	SYSTem:BASE:SSYNc:MODE
+	SYSTem:BASE:SSYNc:OFFSet
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Ssync.Ssync
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,60 @@
+MassMemory
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: MMEMory:COPY
+	single: MMEMory:DELete
+	single: MMEMory:DRIVes
+	single: MMEMory:MDIRectory
+	single: MMEMory:MOVE
+	single: MMEMory:MSIS
+	single: MMEMory:RDIRectory
+	single: MMEMory:SAV
+	single: MMEMory:RCL
+	single: MMEMory:ALIases
+
+.. code-block:: python
+
+	MMEMory:COPY
+	MMEMory:DELete
+	MMEMory:DRIVes
+	MMEMory:MDIRectory
+	MMEMory:MOVE
+	MMEMory:MSIS
+	MMEMory:RDIRectory
+	MMEMory:SAV
+	MMEMory:RCL
+	MMEMory:ALIases
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MassMemory.MassMemory
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.massMemory.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	MassMemory_Load.rst
+	MassMemory_Store.rst
+	MassMemory_Attribute.rst
+	MassMemory_Catalog.rst
+	MassMemory_CurrentDirectory.rst
+	MassMemory_Dcatalog.rst

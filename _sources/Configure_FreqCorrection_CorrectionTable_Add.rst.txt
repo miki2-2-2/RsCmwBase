@@ -1,0 +1,20 @@
+Add
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FDCorrection:CTABle:ADD
+
+.. code-block:: python
+
+	CONFigure:BASE:FDCorrection:CTABle:ADD
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.CorrectionTable_.Add.Add
+	:members:
+	:undoc-members:
+	:noindex:

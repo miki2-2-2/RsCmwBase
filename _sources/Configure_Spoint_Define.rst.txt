@@ -1,0 +1,20 @@
+Define
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:SPOint:DEFine
+
+.. code-block:: python
+
+	CONFigure:SPOint:DEFine
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Spoint_.Define.Define
+	:members:
+	:undoc-members:
+	:noindex:

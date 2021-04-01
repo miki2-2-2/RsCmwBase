@@ -1,0 +1,22 @@
+Exceeded
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SENSe:BASE:TEMPerature:EXCeeded:LIST
+	single: SENSe:BASE:TEMPerature:EXCeeded
+
+.. code-block:: python
+
+	SENSe:BASE:TEMPerature:EXCeeded:LIST
+	SENSe:BASE:TEMPerature:EXCeeded
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Sense_.Temperature_.Exceeded.Exceeded
+	:members:
+	:undoc-members:
+	:noindex:

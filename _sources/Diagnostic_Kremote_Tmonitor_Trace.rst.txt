@@ -1,0 +1,20 @@
+Trace
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:KREMote:TMONitor:TRACe
+
+.. code-block:: python
+
+	DIAGnostic:KREMote:TMONitor:TRACe
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Kremote_.Tmonitor_.Trace.Trace
+	:members:
+	:undoc-members:
+	:noindex:

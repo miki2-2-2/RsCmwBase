@@ -1,0 +1,20 @@
+Setup
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:ROUTing:EXPert:SETup
+
+.. code-block:: python
+
+	DIAGnostic:ROUTing:EXPert:SETup
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Routing_.Expert_.Setup.Setup
+	:members:
+	:undoc-members:
+	:noindex:

@@ -1,0 +1,20 @@
+Scan
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:PIAS:SCAN
+
+.. code-block:: python
+
+	DIAGnostic:PIAS:SCAN
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Pias_.Scan.Scan
+	:members:
+	:undoc-members:
+	:noindex:

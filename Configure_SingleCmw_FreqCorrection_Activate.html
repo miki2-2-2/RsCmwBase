@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Activate &mdash; RsCmwBase 3.7.90.37 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deactivate" href="Configure_SingleCmw_FreqCorrection_Deactivate.html" />
+    <link rel="prev" title="FreqCorrection" href="Configure_SingleCmw_FreqCorrection.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> RsCmwBase
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Readme.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repcap.html">RepCaps</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="RsCmwBase.html">RsCmwBase API Structure</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Configure.html">Configure</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Configure_Spoint.html">Spoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Semaphore.html">Semaphore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Mutex.html">Mutex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_MultiCmw.html">MultiCmw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_IpSubnet.html">IpSubnet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Adjustment.html">Adjustment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Ipcr.html">Ipcr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_FreqCorrection.html">FreqCorrection</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Configure_SingleCmw.html">SingleCmw</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="Configure_SingleCmw_FreqCorrection.html">FreqCorrection</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Cmwd.html">Cmwd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Correction.html">Correction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Configure_Mmonitor.html">Mmonitor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="MultiCmw.html">MultiCmw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sense.html">Sense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="System.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Source.html">Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Calibration.html">Calibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ipc.html">Ipc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Diagnostic.html">Diagnostic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cmwd.html">Cmwd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Procedure.html">Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Get.html">Get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Correction.html">Correction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Catalog.html">Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Write.html">Write</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FirmwareUpdate.html">FirmwareUpdate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MacroCreate.html">MacroCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TriggerInvoke.html">TriggerInvoke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalWait.html">GlobalWait</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GlobalClearStatus.html">GlobalClearStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Status.html">Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Display.html">Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FormatPy.html">FormatPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoToLocal.html">GoToLocal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Buffer.html">Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HardCopy.html">HardCopy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SaveState.html">SaveState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecallState.html">RecallState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassMemory.html">MassMemory</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RsCmwBase</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="RsCmwBase.html">RsCmwBase API Structure</a> &raquo;</li>
+        
+          <li><a href="Configure.html">Configure</a> &raquo;</li>
+        
+          <li><a href="Configure_SingleCmw.html">SingleCmw</a> &raquo;</li>
+        
+          <li><a href="Configure_SingleCmw_FreqCorrection.html">FreqCorrection</a> &raquo;</li>
+        
+      <li>Activate</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Configure_SingleCmw_FreqCorrection_Activate.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="activate">
+<h1>Activate<a class="headerlink" href="#activate" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">SCPI Commands</p>
+<div class="highlight-python notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="n">CONFigure</span><span class="p">:</span><span class="n">CMWS</span><span class="p">:</span><span class="n">FDCorrection</span><span class="p">:</span><span class="n">ACTivate</span><span class="p">:</span><span class="n">RX</span>
+<span class="n">CONFigure</span><span class="p">:</span><span class="n">CMWS</span><span class="p">:</span><span class="n">FDCorrection</span><span class="p">:</span><span class="n">ACTivate</span><span class="p">:</span><span class="n">TX</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">Activate</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/Configure_/SingleCmw_/FreqCorrection_/Activate.html#Activate"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Activate commands group definition. 2 total commands, 0 Sub-groups, 2 group commands</p>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">RxStruct</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/Configure_/SingleCmw_/FreqCorrection_/Activate.html#Activate.RxStruct"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Structure for setting input parameters. Contains optional set arguments. Fields:</p>
+<ul class="simple">
+<li><p>Connectorbench: str: Selects a single connector or a connector bench with 4 or 8 connectors For possible values, see ‘Values for RF Path Selection’.</p></li>
+<li><p>Table_1: str: String parameter identifying the table for the selected single connector or for the first connector of the selected bench (e.g. 1.1)</p></li>
+<li><p>Table_2: str: Optional setting parameter. String parameter identifying the table for the second connector of the selected bench (e.g. 1.2)</p></li>
+<li><p>Table_3: str: Optional setting parameter. Table for third connector of selected bench (e.g. 1.3)</p></li>
+<li><p>Table_4: str: Optional setting parameter. Table for fourth connector of selected bench (e.g. 1.4)</p></li>
+<li><p>Table_5: str: Optional setting parameter. Table for fifth connector of selected bench (e.g. 1.5)</p></li>
+<li><p>Table_6: str: Optional setting parameter. Table for sixth connector of selected bench (e.g. 1.6)</p></li>
+<li><p>Table_7: str: Optional setting parameter. Table for seventh connector of selected bench (e.g. 1.7)</p></li>
+<li><p>Table_8: str: Optional setting parameter. Table for eighth connector of selected bench (e.g. 1.8)</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-name descname">TxStruct</code><a class="reference internal" href="_modules/RsCmwBase/Implementations/Configure_/SingleCmw_/FreqCorrection_/Activate.html#Activate.TxStruct"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Structure for setting input parameters. Contains optional set arguments. Fields:</p>
+<ul class="simple">
+<li><p>Connectorbench: str: Selects a single connector or a connector bench with 4 or 8 connectors For possible values, see ‘Values for RF Path Selection’.</p></li>
+<li><p>Table_1: str: String parameter identifying the table for the selected single connector or for the first connector of the selected bench (e.g. 1.1)</p></li>
+<li><p>Table_2: str: Optional setting parameter. String parameter identifying the table for the second connector of the selected bench (e.g. 1.2)</p></li>
+<li><p>Table_3: str: Optional setting parameter. Table for third connector of selected bench (e.g. 1.3)</p></li>
+<li><p>Table_4: str: Optional setting parameter. Table for fourth connector of selected bench (e.g. 1.4)</p></li>
+<li><p>Table_5: str: Optional setting parameter. Table for fifth connector of selected bench (e.g. 1.5)</p></li>
+<li><p>Table_6: str: Optional setting parameter. Table for sixth connector of selected bench (e.g. 1.6)</p></li>
+<li><p>Table_7: str: Optional setting parameter. Table for seventh connector of selected bench (e.g. 1.7)</p></li>
+<li><p>Table_8: str: Optional setting parameter. Table for eighth connector of selected bench (e.g. 1.8)</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_rx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">RsCmwBase.Implementations.Configure_.SingleCmw_.FreqCorrection_.Activate.Activate.RxStruct</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Configure_/SingleCmw_/FreqCorrection_/Activate.html#Activate.set_rx"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: CONFigure:CMWS:FDCorrection:ACTivate:RX</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">configure</span><span class="o">.</span><span class="n">singleCmw</span><span class="o">.</span><span class="n">freqCorrection</span><span class="o">.</span><span class="n">activate</span><span class="o">.</span><span class="n">set_rx</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="n">RxStruct</span><span class="p">())</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Activates correction tables for R&amp;S CMWS input paths (RX) or output paths (TX) .</dt><dd><p>INTRO_CMD_HELP: You can use the commands in two ways:</p>
+<ul class="simple">
+<li><p>To activate a correction table for a selected RF connector of the R&amp;S CMWS, specify a single connector and a single table name.</p></li>
+<li><p>To activate individual correction tables for all RF connectors of a connector bench, select a bench and specify a table for each connector (4 or 8 connectors/tables) .</p></li>
+</ul>
+</dd>
+</dl>
+<p>You can add the prefix ‘inst&lt;n&gt;/’ to table names to address subinstrument number &lt;n&gt;+1.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param value</dt>
+<dd class="field-odd"><p>see the help for RxStruct structure arguments.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">set_tx</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">RsCmwBase.Implementations.Configure_.SingleCmw_.FreqCorrection_.Activate.Activate.TxStruct</span></em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/RsCmwBase/Implementations/Configure_/SingleCmw_/FreqCorrection_/Activate.html#Activate.set_tx"><span class="viewcode-link">[source]</span></a></dt>
+<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># SCPI: CONFigure:CMWS:FDCorrection:ACTivate:TX</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">configure</span><span class="o">.</span><span class="n">singleCmw</span><span class="o">.</span><span class="n">freqCorrection</span><span class="o">.</span><span class="n">activate</span><span class="o">.</span><span class="n">set_tx</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="n">TxStruct</span><span class="p">())</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Activates correction tables for R&amp;S CMWS input paths (RX) or output paths (TX) .</dt><dd><p>INTRO_CMD_HELP: You can use the commands in two ways:</p>
+<ul class="simple">
+<li><p>To activate a correction table for a selected RF connector of the R&amp;S CMWS, specify a single connector and a single table name.</p></li>
+<li><p>To activate individual correction tables for all RF connectors of a connector bench, select a bench and specify a table for each connector (4 or 8 connectors/tables) .</p></li>
+</ul>
+</dd>
+</dl>
+<p>You can add the prefix ‘inst&lt;n&gt;/’ to table names to address subinstrument number &lt;n&gt;+1.</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">param value</dt>
+<dd class="field-odd"><p>see the help for TxStruct structure arguments.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Configure_SingleCmw_FreqCorrection_Deactivate.html" class="btn btn-neutral float-right" title="Deactivate" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Configure_SingleCmw_FreqCorrection.html" class="btn btn-neutral float-left" title="FreqCorrection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright © Rohde &amp; Schwarz 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

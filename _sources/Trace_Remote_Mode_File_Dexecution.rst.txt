@@ -1,0 +1,28 @@
+Dexecution
+----------------------------------------
+
+
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Trace_.Remote_.Mode_.File_.Dexecution.Dexecution
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.trace.remote.mode.file.dexecution.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Trace_Remote_Mode_File_Dexecution_Duration.rst

@@ -1,0 +1,46 @@
+Net
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:COMMunicate:NET:ADAPter
+	single: SYSTem:COMMunicate:NET:GATeway
+	single: SYSTem:COMMunicate:NET:IPADdress
+	single: SYSTem:COMMunicate:NET:HOSTname
+	single: SYSTem:COMMunicate:NET:DHCP
+
+.. code-block:: python
+
+	SYSTem:COMMunicate:NET:ADAPter
+	SYSTem:COMMunicate:NET:GATeway
+	SYSTem:COMMunicate:NET:IPADdress
+	SYSTem:COMMunicate:NET:HOSTname
+	SYSTem:COMMunicate:NET:DHCP
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Communicate_.Net.Net
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.communicate.net.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Communicate_Net_Dns.rst
+	System_Communicate_Net_Subnet.rst

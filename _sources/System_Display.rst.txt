@@ -1,0 +1,47 @@
+Display
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:DISPlay:UPDate
+	single: SYSTem:BASE:DISPlay:MWINdow
+	single: SYSTem:BASE:DISPlay:COLorset
+	single: SYSTem:BASE:DISPlay:FONTset
+	single: SYSTem:BASE:DISPlay:ROLLkeymode
+	single: SYSTem:BASE:DISPlay:LANGuage
+
+.. code-block:: python
+
+	SYSTem:DISPlay:UPDate
+	SYSTem:BASE:DISPlay:MWINdow
+	SYSTem:BASE:DISPlay:COLorset
+	SYSTem:BASE:DISPlay:FONTset
+	SYSTem:BASE:DISPlay:ROLLkeymode
+	SYSTem:BASE:DISPlay:LANGuage
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Display.Display
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.system.display.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	System_Display_Monitor.rst

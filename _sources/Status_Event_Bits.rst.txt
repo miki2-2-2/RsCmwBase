@@ -1,0 +1,39 @@
+Bits
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: STATus:EVENt:BITS:CLEar
+
+.. code-block:: python
+
+	STATus:EVENt:BITS:CLEar
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Status_.Event_.Bits.Bits
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.status.event.bits.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Status_Event_Bits_All.rst
+	Status_Event_Bits_Count.rst
+	Status_Event_Bits_Next.rst

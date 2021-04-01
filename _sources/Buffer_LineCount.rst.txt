@@ -1,0 +1,20 @@
+LineCount
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: FETCh:BASE:BUFFer:LINecount
+
+.. code-block:: python
+
+	FETCh:BASE:BUFFer:LINecount
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Buffer_.LineCount.LineCount
+	:members:
+	:undoc-members:
+	:noindex:

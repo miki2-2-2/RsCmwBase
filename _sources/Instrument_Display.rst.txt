@@ -1,0 +1,28 @@
+Display
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: INSTrument:DISPlay:CAT
+	single: INSTrument:DISPlay:MODE
+	single: INSTrument:DISPlay:OPEN
+	single: INSTrument:DISPlay:CLOSe
+	single: INSTrument:DISPlay
+
+.. code-block:: python
+
+	INSTrument:DISPlay:CAT
+	INSTrument:DISPlay:MODE
+	INSTrument:DISPlay:OPEN
+	INSTrument:DISPlay:CLOSe
+	INSTrument:DISPlay
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Instrument_.Display.Display
+	:members:
+	:undoc-members:
+	:noindex:

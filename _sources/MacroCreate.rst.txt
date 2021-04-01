@@ -1,0 +1,20 @@
+MacroCreate
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: *DMC
+
+.. code-block:: python
+
+	*DMC
+
+
+
+.. autoclass:: RsCmwBase.Implementations.MacroCreate.MacroCreate
+	:members:
+	:undoc-members:
+	:noindex:

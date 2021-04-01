@@ -1,0 +1,34 @@
+Device
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:BASE:DEVice:SUBinst
+	single: SYSTem:DEVice:ID
+	single: SYSTem:BASE:DEVice:LICense
+	single: SYSTem:BASE:DEVice:COUNt
+	single: SYSTem:BASE:DEVice:RESet
+	single: SYSTem:BASE:DEVice:SETup
+	single: SYSTem:BASE:DEVice:MSCont
+	single: SYSTem:BASE:DEVice:MSCCount
+
+.. code-block:: python
+
+	SYSTem:BASE:DEVice:SUBinst
+	SYSTem:DEVice:ID
+	SYSTem:BASE:DEVice:LICense
+	SYSTem:BASE:DEVice:COUNt
+	SYSTem:BASE:DEVice:RESet
+	SYSTem:BASE:DEVice:SETup
+	SYSTem:BASE:DEVice:MSCont
+	SYSTem:BASE:DEVice:MSCCount
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Device.Device
+	:members:
+	:undoc-members:
+	:noindex:

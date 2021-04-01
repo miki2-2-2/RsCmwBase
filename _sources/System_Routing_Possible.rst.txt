@@ -1,0 +1,20 @@
+Possible
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: SYSTem:ROUTing:POSSible
+
+.. code-block:: python
+
+	SYSTem:ROUTing:POSSible
+
+
+
+.. autoclass:: RsCmwBase.Implementations.System_.Routing_.Possible.Possible
+	:members:
+	:undoc-members:
+	:noindex:

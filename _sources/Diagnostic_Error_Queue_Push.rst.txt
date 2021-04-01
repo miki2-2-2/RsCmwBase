@@ -1,0 +1,20 @@
+Push
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:ERRor:QUEue:PUSH
+
+.. code-block:: python
+
+	DIAGnostic:ERRor:QUEue:PUSH
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.Error_.Queue_.Push.Push
+	:members:
+	:undoc-members:
+	:noindex:

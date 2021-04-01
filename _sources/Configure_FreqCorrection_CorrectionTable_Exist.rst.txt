@@ -1,0 +1,20 @@
+Exist
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:FDCorrection:CTABle:EXISt
+
+.. code-block:: python
+
+	CONFigure:BASE:FDCorrection:CTABle:EXISt
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.FreqCorrection_.CorrectionTable_.Exist.Exist
+	:members:
+	:undoc-members:
+	:noindex:

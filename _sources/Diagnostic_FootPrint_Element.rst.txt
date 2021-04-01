@@ -1,0 +1,40 @@
+Element
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:FOOTprint:ELEMent:IDS
+
+.. code-block:: python
+
+	DIAGnostic:FOOTprint:ELEMent:IDS
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.FootPrint_.Element.Element
+	:members:
+	:undoc-members:
+	:noindex:
+
+
+.. rubric:: Cloning the Group
+
+.. code-block:: python
+
+	# Create a clone of the original group, that exists independently
+	group2 = driver.diagnostic.footPrint.element.clone()
+
+
+
+.. rubric:: Subgroups
+.. toctree::
+	:maxdepth: 6
+	:glob:
+
+	Diagnostic_FootPrint_Element_Connection.rst
+	Diagnostic_FootPrint_Element_Properties.rst
+	Diagnostic_FootPrint_Element_References.rst
+	Diagnostic_FootPrint_Element_Data.rst

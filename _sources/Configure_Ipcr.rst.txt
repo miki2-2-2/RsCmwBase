@@ -1,0 +1,22 @@
+Ipcr
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: CONFigure:BASE:IPCR:ENABle
+	single: CONFigure:BASE:IPCR:IDENt
+
+.. code-block:: python
+
+	CONFigure:BASE:IPCR:ENABle
+	CONFigure:BASE:IPCR:IDENt
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Configure_.Ipcr.Ipcr
+	:members:
+	:undoc-members:
+	:noindex:

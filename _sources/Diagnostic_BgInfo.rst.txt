@@ -1,0 +1,20 @@
+BgInfo
+----------------------------------------
+
+
+
+.. rubric:: SCPI Commands
+
+.. index::
+	single: DIAGnostic:BGINfo:CATalog
+
+.. code-block:: python
+
+	DIAGnostic:BGINfo:CATalog
+
+
+
+.. autoclass:: RsCmwBase.Implementations.Diagnostic_.BgInfo.BgInfo
+	:members:
+	:undoc-members:
+	:noindex:
